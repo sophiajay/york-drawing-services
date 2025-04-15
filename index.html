@@ -1,432 +1,195 @@
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
     <title>York Architectural Drawings</title>
     <meta name="description"
         content="Need architectural drawings in York? We provide clear and accurate plans for home extensions, renovations, and more. Get your project started with our local experts!">
     <meta name="keywords"
         content="architectural drawings, house plans, building plans, home design, renovation plans, extension plans, planning drawings, York architecture, architectural services York, York building plans, York house plans, design my house York, architectural design York, drawings for house, building design, draughtsman york, draughtsman, draughtsman services york, draughting services, draughting services york">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="York Drawing Services" />
-    <link rel="manifest" href="site.webmanifest" />
-    <style type="text/css">
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-
-        * {
-            margin: 0;
-            font-size: 100%;
-            font-weight: normal;
-        }
-
-        body {
-            line-height: 1.5;
-            font-size: 1.5em;
-            -webkit-font-smoothing: antialiased;
-            background: #495448;
-        }
-
-        img,
-        picture,
-        video,
-        canvas,
-        svg {
-            display: block;
-            max-width: 100%;
-        }
-
-        input,
-        button,
-        textarea,
-        select {
-            font: inherit;
-        }
-
-        p,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            overflow-wrap: break-word;
-        }
-
-        p {
-            text-wrap: pretty;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            text-wrap: balance;
-        }
-
-        th,
-        td {
-            text-align: left;
-            padding: 6px 0;
-        }
-
-        fieldset {
-            border: none;
-            padding: 0;
-        }
-
-        #root,
-        #__next {
-            isolation: isolate;
-        }
-
-        main {
-            width: 80%;
-            max-width: 1200px;
-            margin: 0 auto;
-            min-width: 440px;
-            padding-bottom: 40px;
-        }
-
-        .text-light {
-            color: #EFEFEF;
-        }
-
-        .bg-light {
-            background-color: #EFEFEF;
-        }
-
-        .border-dark {
-            border: 1px solid #707D72;
-        }
-
-        .card {
-            padding: 40px 40px 24px 40px;
-        }
-
-        .space-bottom {
-            margin-bottom: 20px;
-        }
-
-        .space-top {
-            margin-top: 60px;
-        }
-
-        .text-center {
-            text-align: center;
-        }
-
-        .flex {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .flex-wrap {
-            flex-wrap: wrap;
-        }
-
-        .hero-image {
-            padding: 2px;
-            margin: 2px;
-        }
-
-        .text-xl {
-            font-size: 1.2em;
-        }
-
-        .text-sm {
-            font-size: 0.9em;
-        }
-
-        .cormorant-regular {
-            font-family: "Cormorant", serif;
-            font-optical-sizing: auto;
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        h2 {
-            margin-bottom: 10px;
-            font-size: 1.3em;
-        }
-
-        p {
-            margin-bottom: 8px;
-        }
-
-
-        .gap-h {
-            gap: 0 70px;
-        }
-
-        .flex-even {
-            flex-grow: 1;
-            flex-basis: 0;
-            min-width: 350px;
-        }
-
-        .w-full {
-            width: 100%;
-        }
-
-        a,
-        a:visited {
-            color: #495448;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .field {
-            margin-bottom: 20px
-        }
-
-        .input {
-
-            padding: 4px 8px 0;
-            vertical-align: middle;
-            border-radius: 2px;
-            width: 100%;
-            min-height: 36px;
-            background-color: #ffffff;
-            border: 1px solid rgba(36, 28, 21, 0.3);
-            transition: all 0.2s ease-in-out 0s;
-            font-weight: normal;
-            font-family: inherit;
-        }
-
-        .input:focus {
-            outline: none;
-            border: 1px solid #495448;
-            box-shadow: inset 0 0 0 1px #495448;
-        }
-
-        .button {
-            display: inline-block;
-            outline: none;
-            cursor: pointer;
-            font-size: inherit;
-            line-height: 1;
-            border-radius: 500px;
-            transition-property: background-color, border-color, color, box-shadow, filter;
-            transition-duration: .3s;
-            border: 1px solid transparent;
-            letter-spacing: 2px;
-            min-width: 160px;
-            text-transform: uppercase;
-            white-space: normal;
-            text-align: center;
-            padding: 14px 14px 14px;
-            color: #495448;
-            box-shadow: inset 0 0 0 2px #495448;
-            background-color: transparent;
-            height: 48px;
-        }
-
-        fieldset:not(:disabled) .button:hover {
-            color: #ffffff;
-            background-color: #495448;
-        }
-
-
-        fieldset:disabled .button {
-            cursor: not-allowed;
-        }
-
-        ul li {
-            padding-bottom: 8px;
-        }
-
-        label:has(+ :required):after {
-            content: ' *';
-            font-size: 0.9em;
-            color: rgb(149, 60, 60);
-        }
-
-        .error {
-            padding: 20px 20px 13px;
-            border-radius: 2px;
-            background-color: rgb(149, 60, 60);
-            color: white;
-        }
-
-        .success {
-            padding: 20px 20px 13px;
-            border-radius: 2px;
-            background-color: rgb(42, 111, 58);
-            color: white;
-        }
-
-        @media only screen and (min-width: 42em) {
-
-            body {
-                font-size: 1.2em;
-            }
-
-            .text-xl {
-                font-size: 3em;
-            }
-        }
-    </style>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="static/css/styles.css">
 </head>
 
-<body class="cormorant-regular">
-    <main>
-        <h1 class="text-xl text-light space-bottom space-top">York Drawing Services</h1>
-        <div class="bg-light flex space-bottom flex-wrap">
-            <div class="flex-even">
-                <div class="hero-image border-dark">
-                    <img src="img/image1.png" width="100%" />
-                </div>
-            </div>
-            <div class="flex-even">
-                <div class="hero-image border-dark">
-                    <img src="img/image2.png" width="100%" />
-                </div>
-            </div>
-        </div>
-        <div class="bg-light card text-center space-bottom">
-            <p>Our mission is to bring your dream spaces to life, one clear and creative drawing at a time, at prices
-                that won't break the bank! We want everyone to be able to see exactly what they'll pay, and we'll always
-                work hard to give you the best possible price for your planning permission drawings. We're here to help
-                make building and designing fun and easy to understand, so everyone can see their ideas take shape!</p>
-        </div>
-
-        <div class="bg-light card space-bottom flex flex-wrap gap-h gap-v">
-            <div class="flex-even space-bottom">
-                <h2>PRICES</h2>
-                <table class="w-full space-bottom">
-                    <thead>
-                        <tr>
-                            <th>DRAWING TYPE</th>
-                            <th>PRICE</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Existing Floor Plans and Elevations</td>
-                            <td>£295</td>
-                        </tr>
-                        <tr>
-                            <td>Porch Extension</td>
-                            <td>£695</td>
-                        </tr>
-                        <tr>
-                            <td>Outbuilding/Garage</td>
-                            <td>£695</td>
-                        </tr>
-                        <tr>
-                            <td>Single Storey Extension</td>
-                            <td>£795</td>
-
-                        </tr>
-                        <tr>
-                            <td>Loft Conversion</td>
-                            <td>£895</td>
-
-                        </tr>
-                        <tr>
-                            <td>Two Storey Extension</td>
-                            <td>£995</td>
-
-                        </tr>
-                    </tbody>
-                </table>
-
-                <p class="text-sm">All of our prices are fixed so you won&#39;t have any nasty surprises!</p>
-                <p class="text-sm">If you prefer, you can provide your own measurements, removing
-                    the need for a site visit and reducing the cost of your Exising Floor
-                    Plans and Elevations to £145.</p>
-            </div>
-            <div class="flex-even space-bottom">
-                <h2>WHAT&#39;S INCLUDED</h2>
-                <ul class="space-bottom">
-                    <li>1:100 scaled A3 Floor Plan</li>
-                    <li>1:100 scaled A3 Elevations</li>
-                    <li>1:1250 site map</li>
-                    <li>1:200 block plan</li>
-                </ul>
-
-                <h2>TURNAROUND TIMES</h2>
-                <table class="w-full space-bottom">
-                    <tbody>
-                        <tr>
-                            <th>Standard (2 weeks)</th>
-                            <td>FREE</td>
-                        </tr>
-                        <tr>
-                            <th>Express</th>
-                            <td>£195</td>
-                        </tr>
-
-                    </tbody>
-                </table>
-
-                <p class="text-sm">We will always do our best to deliver your drawings as quickly
-                    as possible after our site visit however, we understand that
-                    sometimes they are needed within a very small time frame
-                    which is why we offer our express service.</p>
-            </div>
-        </div>
-
-        <div class="bg-light card space-bottom">
-            <h2>CONTACT US</h2>
-            <p class="text-sm">Fill out the form below and we&#39;ll get back to you as quickly as we can. All fields are
-                required.</p>
-            <p class="text-sm">If you&#39;d prefer to email us directly, that&#39;s totally fine! You can find our email address
-                below.</p>
-            <form id="contact-form" action="https://formspree.io/f/xnnpbzdl" method="POST">
-                <fieldset>
-                    <p id="contact-form-status"></p>
-                    <div class="flex space-bottom gap-h flex-wrap">
-                        <div class="flex-even">
-                            <div class="field">
-                                <label for="name">Name</label>
-                                <input class="input w-full" required name="name" />
-                            </div>
-                            <div class="field">
-                                <label for="telephone">Phone number</label>
-                                <input class="input w-full" required type="tel" name="telephone" />
-                            </div>
-                            <div class="field">
-                                <label for="email">Email</label>
-                                <input class="input w-full" required type="email" name="email" />
-                            </div>
-                        </div>
-                        <div class="flex-even">
-                            <div class="field">
-                                <label for="message">Message</label>
-                                <textarea rows="4" style="height:125px" class="input w-full" required
-                                    name="message"></textarea>
-                            </div>
-                            <div class="field">
-                                <button id="submit-button" class="button" type="submit">Send</button>
-                            </div>
-                        </div>
+<body>
+    <main class="content">
+        <div class="container">
+            <div class="container-inner">
+                <div class="text-center">
+                    <div class="logo-img"><img width="100%" src="static/img/logo.png" alt="York Drawing Services" />
                     </div>
-                </fieldset>
-            </form>
-
-            <p class="text-center"><a href="mailto:hello@yorkdrawingservices.com">hello@yorkdrawingservices.com</a></p>
-
+                    <h1 class="text-xl">York Drawing<br /><span class="logo-type-small">Services</span></h1>
+                </div>
+            </div>
         </div>
+        <div class="hero-subtext lg-desktop">
+            <p>Your Dream Home. Beautifully Designed,<br />Reasonably Priced.</p>
+        </div>
+        <div class="container">
+            <div class="container-inner">
+                <div class="flex flex-wrap gap-h gap-v">
+                    <div class="flex-even space-bottom showcase-img">
+                        <img width="100%" src="static/img/image1.png" />
+                    </div>
+                    <div class="flex-even space-bottom showcase-img">
+                        <img width="100%" src="static/img/image2.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container-inner">
+                <div class="flex flex-wrap gap-h gap-v">
+                    <div class="flex-even space-bottom">
+                        <h2>PRICES</h2>
+                        <table class="w-full space-bottom">
+                            <thead>
+                                <tr>
+                                    <th>DRAWING TYPE</th>
+                                    <th>PRICE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Existing Floor Plans and Elevations</td>
+                                    <td>£295</td>
+                                </tr>
+                                <tr>
+                                    <td>Porch Extension</td>
+                                    <td>£695</td>
+                                </tr>
+                                <tr>
+                                    <td>Outbuilding/Garage</td>
+                                    <td>£695</td>
+                                </tr>
+                                <tr>
+                                    <td>Single Storey Extension</td>
+                                    <td>£795</td>
 
+                                </tr>
+                                <tr>
+                                    <td>Loft Conversion</td>
+                                    <td>£895</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Two Storey Extension</td>
+                                    <td>£995</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="flex-even space-bottom">
+                        <h2>WHAT&#39;S INCLUDED</h2>
+                        <ul class="space-bottom">
+                            <li>1:100 scaled A3 Floor Plan</li>
+                            <li>1:100 scaled A3 Elevations</li>
+                            <li>1:1250 site map</li>
+                            <li>1:200 block plan</li>
+                        </ul>
+
+                        <h2>TURNAROUND TIMES</h2>
+                        <table class="w-full space-bottom">
+                            <tbody>
+                                <tr>
+                                    <th>Standard (2 weeks)</th>
+                                    <td>FREE</td>
+                                </tr>
+                                <tr>
+                                    <th>Express</th>
+                                    <td>£195</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container-inner hero-subtext">
+                <p>Our mission is to bring your dream spaces to life, one clear and creative drawing at a time, at
+                    prices that won't break the bank! We want everyone to be able to see exactly what they'll pay, and
+                    we'll always work hard to give you the best possible price for your planning permission drawings.
+                    We're here to help make building and designing fun and easy to understand, so everyone can see their
+                    ideas take shape!</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container-inner">
+                <h2>CONTACT US</h2>
+                <p>Fill out the form below and we&#39;ll get back to you as quickly as we can. All
+                    fields
+                    are
+                    required.</p>
+                <p>If you&#39;d prefer to email us directly, that&#39;s totally fine! You can find our
+                    email
+                    address
+                    below.</p>
+                <form id="contact-form" action="https://formspree.io/f/xnnpbzdl" method="POST">
+                    <fieldset>
+                        <p id="contact-form-status"></p>
+                        <div class="flex space-bottom gap-h flex-wrap">
+                            <div class="flex-even">
+                                <div class="field">
+                                    <label for="name">Name</label>
+                                    <input class="input w-full" required name="name" />
+                                </div>
+                                <div class="field">
+                                    <label for="telephone">Phone number</label>
+                                    <input class="input w-full" required type="tel" name="telephone" />
+                                </div>
+                                <div class="field">
+                                    <label for="email">Email</label>
+                                    <input class="input w-full" required type="email" name="email" />
+                                </div>
+                            </div>
+                            <div class="flex-even">
+                                <div class="field">
+                                    <label for="message">Message</label>
+                                    <textarea rows="4" style="height:125px" class="input w-full" required
+                                        name="message"></textarea>
+                                </div>
+                                <div class="field">
+                                    <button id="submit-button" class="button" type="submit">Send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <p class="text-center"><a class="footer-link"
+                        href="mailto:hello@yorkdrawingservices.com">hello@yorkdrawingservices.com</a></p>
+
+            </div>
+        </div>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="container-inner flex gap-h">
+                <div class="flex-grow">
+                    <h3 class="footer-heading footer-heading-first">York Drawing Services</h3>
+                    <p class="footer-text">Your Dream Home. Beautifully Designed, Reasonably Priced.</p>
+                </div>
+                <div class="text-right">
+                    <ul class="footer-list">
+                        <li><a class="footer-link" target="_blank"
+                                href="https://instagram.com/yorkdrawingservices">Instagram</a></li>
+                        <li><a class="footer-link" target="_blank"
+                                href="https://facebook.com/yorkdrawingservices">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
 
-    <!-- Place this script at the end of the body tag -->
     <script>
         var form = document.getElementById("contact-form");
 
@@ -446,7 +209,7 @@
                 }
             }).then(response => {
                 if (response.ok) {
-                    status.innerHTML = "Thanks for your message!";
+                    status.innerHTML = "Thanks for your message! We'll get back to you soon.";
                     status.classList.add("success");
                     form.reset()
                 } else {
