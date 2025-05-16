@@ -1,7 +1,7 @@
 import fs from 'fs/promises';
 
 const templateDir = "./templates";
-const siteDir = "./site";
+const siteDir = "./docs";
 
 const files = await fs.readdir(templateDir);
 const template = await fs.readFile(`${templateDir}/template.html`, "utf8");
