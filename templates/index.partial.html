@@ -8,15 +8,21 @@
     </div>
 </div>
 <div class="hero-subtext lg-desktop">
-    <p>Your Dream Home. Beautifully Designed,<br />Reasonably Priced.</p>
+    <div class="">
+        <p>Your Dream Home. Beautifully Designed,<br />Reasonably Priced.</p>
+    </div>
+
+    <div class="space-top">
+        <a href="#contact-us" class="button" >Get in touch &raquo;</a>
+    </div>
 </div>
 <div class="container">
     <div class="container-inner">
         <div class="flex flex-wrap gap-h gap-v">
-            <div class="flex-even space-bottom showcase-img">
+            <div class="flex-even  showcase-img">
                 <img width="100%" src="static/img/image1.png" />
             </div>
-            <div class="flex-even space-bottom showcase-img">
+            <div class="flex-even  showcase-img">
                 <img width="100%" src="static/img/image2.png" />
             </div>
         </div>
@@ -25,9 +31,9 @@
 <div class="container">
     <div class="container-inner">
         <div class="flex flex-wrap gap-h gap-v">
-            <div class="flex-even space-bottom">
+            <div class="flex-even ">
                 <h2>PRICES</h2>
-                <table class="w-full space-bottom">
+                <table class="w-full ">
                     <thead>
                         <tr>
                             <th>DRAWING TYPE</th>
@@ -65,9 +71,9 @@
                     </tbody>
                 </table>
             </div>
-            <div class="flex-even space-bottom">
+            <div class="flex-even ">
                 <h2>WHAT&#39;S INCLUDED</h2>
-                <ul class="space-bottom">
+                <ul class="">
                     <li>1:100 scaled A3 Floor Plan</li>
                     <li>1:100 scaled A3 Elevations</li>
                     <li>1:1250 site map</li>
@@ -75,7 +81,7 @@
                 </ul>
 
                 <h2>TURNAROUND TIMES</h2>
-                <table class="w-full space-bottom">
+                <table class="w-full ">
                     <tbody>
                         <tr>
                             <th>Standard (2 weeks)</th>
@@ -103,7 +109,7 @@
 </div>
 <div class="container">
     <div class="container-inner">
-        <h2>CONTACT US</h2>
+        <h2 id="contact-us">CONTACT US</h2>
         <p>Fill out the form below and we&#39;ll get back to you as quickly as we can. All
             fields
             are
@@ -115,7 +121,7 @@
         <form id="contact-form" action="https://formspree.io/f/xnnpbzdl" method="POST">
             <fieldset>
                 <p id="contact-form-status"></p>
-                <div class="flex space-bottom gap-h flex-wrap">
+                <div class="flex  gap-h flex-wrap">
                     <div class="flex-even">
                         <div class="field">
                             <label for="name">Name</label>
@@ -144,49 +150,54 @@
             </fieldset>
         </form>
 
-        <p class="text-center"><a class="footer-link"
-                href="mailto:hello@yorkdrawingservices.com">hello@yorkdrawingservices.com</a></p>
+        <p class="text-center"><a class="button contact-button"
+                href="mailto:hello@yorkdrawingservices.com">Email us: hello@yorkdrawingservices.com</a></p>
+        <p class="text-center"><a class="button contact-button" href="tel:07471133494">Call us: 07471133494</a></p>
 
     </div>
 </div>
 <script>
-    var form = document.getElementById("contact-form");
+    var registerFormHandler = function () {
+        var form = document.getElementById("contact-form");
 
-    function handleSubmit(event) {
-        event.preventDefault();
-        var status = document.getElementById("contact-form-status");
-        status.classList.remove("success", "error");
-        var data = new FormData(event.target);
+        function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("contact-form-status");
+            status.classList.remove("success", "error");
+            var data = new FormData(event.target);
 
-        form.getElementsByTagName("fieldset")[0].setAttribute("disabled", "true")
+            form.getElementsByTagName("fieldset")[0].setAttribute("disabled", "true")
 
-        fetch(event.target.action, {
-            method: form.method,
-            body: data,
-            headers: {
-                'Accept': 'application/json'
-            }
-        }).then(response => {
-            if (response.ok) {
-                status.innerHTML = "Thanks for your message! We'll get back to you soon.";
-                status.classList.add("success");
-                form.reset()
-            } else {
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    status.innerHTML = "Thanks for your message! We'll get back to you soon.";
+                    status.classList.add("success");
+                    form.reset()
+                } else {
+                    status.classList.add("error");
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                        } else {
+                            status.innerHTML = "Oops! There was a problem submitting your form"
+                        }
+                    })
+                }
+            }).catch(error => {
                 status.classList.add("error");
-                response.json().then(data => {
-                    if (Object.hasOwn(data, 'errors')) {
-                        status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-                    } else {
-                        status.innerHTML = "Oops! There was a problem submitting your form"
-                    }
-                })
-            }
-        }).catch(error => {
-            status.classList.add("error");
-            status.innerHTML = "Oops! There was a problem submitting your form"
-        }).finally(() => {
-            form.getElementsByTagName("fieldset")[0].setAttribute("disabled", "false")
-        });
+                status.innerHTML = "Oops! There was a problem submitting your form"
+            }).finally(() => {
+                form.getElementsByTagName("fieldset")[0].setAttribute("disabled", "false")
+            });
+        }
+        form.addEventListener("submit", handleSubmit)
     }
-    form.addEventListener("submit", handleSubmit)
+
+    addEventListener("DOMContentLoaded", registerFormHandler);
 </script>

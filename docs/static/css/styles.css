@@ -30,6 +30,8 @@ html {
     /* 1 */
     -webkit-text-size-adjust: 100%;
     /* 2 */
+
+    scroll-behavior: smooth;
 }
 
 /* Sections
@@ -41,6 +43,8 @@ html {
 
 body {
     margin: 0;
+
+    
 }
 
 /**
@@ -639,14 +643,21 @@ table {
     text-align: center;
     padding: 0.5em 1em;
     color: #495448;
-    box-shadow: inset 0 0 0 2px #495448;
+    box-shadow: inset 0 0 0 2px #455763;
     background-color: transparent;
     /* height: 48px; */
+    text-decoration: none;
+}
+
+.contact-button {
+    text-transform: none;
+    background-color: #D6E0E2;
+    box-shadow: none;
 }
 
 fieldset:not(:disabled) .button:hover {
     color: #ffffff;
-    background-color: #495448;
+    background-color: #455763;
 }
 
 
@@ -717,4 +728,8 @@ img {
 .showcase-img {
     padding: 2px;
     border: 1px solid #D6E0E2;
+}
+
+.space-top {
+    margin-top: 0.5em;
 }
