@@ -699,8 +699,27 @@ label:has(+ :required):after {
 }
 
 .logo-img {
-    max-width: 18em;
+    max-width: 16em;
     margin: 2em auto;
+}
+
+.star-img {
+    display: inline;
+    width: auto;
+}
+
+.review {
+    background-color: white;
+    padding: 2em;
+    text-align: center;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-bold {
+    font-weight: bold;
 }
 
 img {
@@ -732,4 +751,8 @@ img {
 
 .space-top {
     margin-top: 0.5em;
+}
+
+.space-top-lg {
+    margin-top: 2.5em;
 }
