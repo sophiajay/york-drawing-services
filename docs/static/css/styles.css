@@ -479,7 +479,7 @@ p+ol {
 }
 
 table {
-    margin-bottom: 1em;
+    margin: 0;
     font-size: 1em;
 }
 
@@ -576,6 +576,10 @@ table {
 
 .text-sm {
     font-size: 0.8em;
+}
+
+.line-height-lg {
+    line-height: 2;
 }
 
 .gap-h {
@@ -699,8 +703,8 @@ label:has(+ :required):after {
 }
 
 .logo-img {
-    max-width: 16em;
-    margin: 2em auto;
+    max-width: 15em;
+    margin: 1.7em auto;
 }
 
 .star-img {
