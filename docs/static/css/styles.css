@@ -1026,6 +1026,7 @@ img {
     box-shadow: none;
     border: none;
     margin-top: 1em;
+    min-width: 250px;
 }
 .button:hover, .contact-btn:hover {
     background: #222;
