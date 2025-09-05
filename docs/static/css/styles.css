@@ -889,6 +889,7 @@ img {
     gap: 2em;
     justify-content: center;
     margin-top: 2em;
+    max-width: 1500px;
 }
 .project-card {
     padding: 1em;
