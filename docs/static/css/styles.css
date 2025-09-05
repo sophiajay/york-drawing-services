@@ -452,6 +452,13 @@ h2 {
     font-weight: lighter;
 }
 
+h2i {
+    font-size: 1.5em;
+    align-items: center;
+    margin: 1.2em 0 0.4em 0;
+    font-weight: lighter;
+}
+
 h3 {
     font-size: 1.2em;
     font-weight: lighter;
