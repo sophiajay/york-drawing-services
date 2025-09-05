@@ -451,14 +451,6 @@ h2 {
     margin: 1.2em 0 0.4em 0;
     font-weight: lighter;
 }
-
-h2i {
-    font-size: 1.5em;
-    align-content: center;
-    margin: 1.2em 0 0.4em 0;
-    font-weight: lighter;
-}
-
 h3 {
     font-size: 1.2em;
     font-weight: lighter;
@@ -919,6 +911,11 @@ img {
 .testimonials-section {
     max-width: 980px;
     margin: 0 auto;
+}
+.testimonials-section .section-title {
+    text-align: center;
+    width: 100%;
+    display: block;
 }
 .testimonial-desc {
     text-align: center;
