@@ -844,7 +844,7 @@ img {
 .package-inner {
     display: flex;
     gap: 4em;
-    max-width: 980px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 .package-left, .package-right {
@@ -877,6 +877,12 @@ img {
 .projects-section {
     background: #F8F6F1;
     padding: 1em 0 2em 0;
+}
+.projects-section .section-title {
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-bottom: 0.5em;
 }
 .projects-list {
     display: flex;
