@@ -876,6 +876,7 @@ img {
 
 /* Projects Section */
 .projects-section {
+    background: #F8F6F1;
     padding: 1em 0 2em 0;
 }
 .projects-list {
