@@ -819,8 +819,8 @@ img {
 
 /* Packages/Prices Section */
 .package-section {
-    background: #fff;
-    padding: 3em 0 2em 0;
+    background: ##F8F6F1;
+    padding: 3em 2em 2em 2em;
 }
 .package-inner {
     display: flex;
