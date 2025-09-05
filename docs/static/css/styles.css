@@ -916,11 +916,12 @@ img {
     text-align: center;
     width: 100%;
     display: block;
-    padding; 0;
+    margin-bottom: 0.5em;
 }
 .testimonial-desc {
     text-align: center;
     font-size: 1em;
+    margin-top: 0;
     margin-bottom: 2em;
     color: #333;
 }
