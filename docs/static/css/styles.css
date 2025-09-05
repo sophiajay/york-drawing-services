@@ -774,6 +774,17 @@ img {
     margin: 0 auto;
     padding: 3em 0 2em 0;
 }
+.hero-right-bg {
+    background: #D6D2C4; /* or your chosen accent color */
+    padding: 2em;
+    border-radius: 8px;
+}
+.drawing-preview img {
+    max-width: 400px;
+    border: 6px solid #fff;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    background: #fff;
+}
 .logo-block {
     flex: 1;
     text-align: center;
