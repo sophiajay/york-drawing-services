@@ -454,7 +454,7 @@ h2 {
 
 h2i {
     font-size: 1.5em;
-    align-items: center;
+    align-content: center;
     margin: 1.2em 0 0.4em 0;
     font-weight: lighter;
 }
