@@ -10,24 +10,12 @@
         <div class="drawing-preview hero-right-bg">
             <div class="carousel">
                 <img class="carousel-image" src="static/img/32-YO10-5HP-Proposed-Elevations.png" alt="Drawing Preview 1" />
-                <img class="carousel-image" src="static/img/image1.png" alt="Drawing Preview 2" style="display:none;" />
-                <img class="carousel-image" src="static/img/image2.png" alt="Drawing Preview 3" style="display:none;" />
+                <img class="carousel-image" src="static/img/image1.png" alt="Drawing Preview 2" />
+                <img class="carousel-image" src="static/img/image2.png" alt="Drawing Preview 3" />
             </div>
         </div>
     </div>
 </div>
-<script>
-    // Simple automatic image carousel
-    document.addEventListener("DOMContentLoaded", function () {
-        const images = document.querySelectorAll('.carousel-image');
-        let current = 0;
-        setInterval(() => {
-            images[current].style.display = "none";
-            current = (current + 1) % images.length;
-            images[current].style.display = "block";
-        }, 3500); // Change image every 3.5 seconds
-    });
-</script>
 
 <!-- PACKAGES/PRICES SECTION -->
 <div class="container package-section">
@@ -192,5 +180,19 @@
         }
         form.addEventListener("submit", handleSubmit)
     }
-    addEventListener("DOMContentLoaded", registerFormHandler);
+
+    function initImageCarousel() {
+        const images = document.querySelectorAll('.carousel-image');
+        let current = 0;
+        const int = setInterval(() => {
+            images[current].style.opacity = 0;
+            current = (current + 1) % images.length;
+            images[current].style.opacity = 1;
+        }, 3500); // Change image every 3.5 seconds
+    }
+
+    addEventListener("DOMContentLoaded", function () {
+        registerFormHandler();
+        initImageCarousel();
+    });
 </script>

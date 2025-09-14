@@ -541,7 +541,7 @@ table {
 }
 
 .footer-heading {
-    color: #455763;
+    /* color: #455763; */
     margin-top: 1.75em;
     margin-bottom: 1em;
 }
@@ -835,7 +835,6 @@ img {
 .hero-desc {
     font-size: 0.95em;
     margin-bottom: 2em;
-    color: #333;
 }
 .hero-btn {
     background: #333;

@@ -11,8 +11,7 @@
         content="architectural drawings, house plans, building plans, home design, renovation plans, extension plans, planning drawings, York architecture, architectural services York, York building plans, York house plans, design my house York, architectural design York, drawings for house, building design, draughtsman york, draughtsman, draughtsman services york, draughting services, draughting services york">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Forum&display=swap" rel="stylesheet">    <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="static/css/styles.css">
 </head>
 
@@ -28,7 +27,11 @@
             <a href="#contact-us" class="button hero-btn">CONTACT US</a>
         </div>
         <div class="drawing-preview hero-right-bg">
-            <img src="static/img/32-YO10-5HP-Proposed-Elevations.png" alt="Drawing Preview" />
+            <div class="carousel">
+                <img class="carousel-image" src="static/img/32-YO10-5HP-Proposed-Elevations.png" alt="Drawing Preview 1" />
+                <img class="carousel-image" src="static/img/image1.png" alt="Drawing Preview 2" />
+                <img class="carousel-image" src="static/img/image2.png" alt="Drawing Preview 3" />
+            </div>
         </div>
     </div>
 </div>
@@ -196,7 +199,21 @@
         }
         form.addEventListener("submit", handleSubmit)
     }
-    addEventListener("DOMContentLoaded", registerFormHandler);
+
+    function initImageCarousel() {
+        const images = document.querySelectorAll('.carousel-image');
+        let current = 0;
+        const int = setInterval(() => {
+            images[current].style.opacity = 0;
+            current = (current + 1) % images.length;
+            images[current].style.opacity = 1;
+        }, 3500); // Change image every 3.5 seconds
+    }
+
+    addEventListener("DOMContentLoaded", function () {
+        registerFormHandler();
+        initImageCarousel();
+    });
 </script>
     </main>
     <footer class="footer">
