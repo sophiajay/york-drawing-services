@@ -405,17 +405,6 @@ textarea,
     font-weight: 400;
     font-style: normal;
 }
-.forum-regular {
-  font-family: "Forum", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.eb-garamond-<uniquifier> {
-  font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
 
 th,
 td {
