@@ -876,6 +876,10 @@ img {
     display: flex;
     flex-direction: column;
 }
+.package-right {
+    justify-content: flex-start; /* ensure right column starts at top */
+    margin-top: 0.7em; /* adjust this value to fine-tune vertical alignment */
+}
 .section-title {
     font-family: "Forum", serif;
     font-size: 1.2em;
