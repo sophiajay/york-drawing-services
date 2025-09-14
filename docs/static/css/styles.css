@@ -815,7 +815,7 @@ img {
 }
 .hero-title {
     font-size: 1.5em;
-    font-family: "Cormorant", serif;
+    font-family: "Forum", serif;
     font-weight: 400;
     margin-bottom: 1em;
     letter-spacing: 0.02em;
@@ -862,7 +862,7 @@ img {
     flex: 1;
 }
 .section-title {
-    font-family: "Cormorant", serif;
+    font-family: "Forum", serif;
     font-size: 1.2em;
     font-weight: 400;
     margin-bottom: 1.5em;
@@ -919,7 +919,7 @@ img {
 }
 .project-title {
     font-size: 1em;
-    font-family: "Cormorant", serif;
+    font-family: "Forum", serif;
     margin-top: 0.5em;
 }
 
@@ -983,7 +983,7 @@ img {
 }
 .contact-details h2 {
     font-size: 1.1em;
-    font-family: "Cormorant", serif;
+    font-family: "Forum", serif;
     margin-bottom: 1em;
 }
 .contact-btn {
@@ -1010,7 +1010,7 @@ img {
     color: #333;
     margin-bottom: 1em;
     text-align: left;
-    font-family: "Cormorant", serif;
+    font-family: "Forum", serif;
 }
 .contact-form-block form {
     background: #F7F5F0;
