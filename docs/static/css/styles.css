@@ -834,6 +834,7 @@ img {
 }
 .hero-desc {
     font-size: 0.95em;
+    font-family: "EB Garamond", serif;
     margin-bottom: 2em;
 }
 .hero-btn {
