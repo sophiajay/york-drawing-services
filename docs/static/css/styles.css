@@ -873,7 +873,6 @@ img {
 .package-inner {
     display: flex;
     gap: 4em;
-    max-width: 1000px;
     margin: 0 auto;
     align-items: flex-start;
 }
