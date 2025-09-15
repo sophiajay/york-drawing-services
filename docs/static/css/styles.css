@@ -945,6 +945,7 @@ img {
     object-fit: cover;
     border-radius: 0px;
     margin-bottom: 0.7em;
+    cursor: pointer;
 }
 .project-title {
     font-size: 1em;
