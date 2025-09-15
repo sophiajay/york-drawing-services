@@ -833,15 +833,17 @@ img {
     margin: 0 0 1.5em 0;
 }
 .hero-title {
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-family: "Forum", serif;
     font-weight: 400;
     letter-spacing: 0.02em;
+    padding: 0 1em 0 1em;
 }
 .hero-desc {
     font-size: 0.9em;
     font-family: "EB Garamond", serif;
     margin-bottom: 3em;
+    padding: 0 1em 0 1em;
 }
 .hero-btn {
     background: #333;
