@@ -44,7 +44,7 @@ html {
 body {
     margin: 0;
 
-    
+
 }
 
 /**
@@ -387,18 +387,23 @@ summary {
     justify-content: center;
     align-items: center;
 }
+
 .carousel-image {
     max-width: 90%;
     transition: opacity 0.7s;
     position: absolute;
-    left: 0; right: 0; top: 0; bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     margin: auto;
 }
+
 .carousel-image:not(:first-child) {
     opacity: 0;
 }
 
-   template {
+template {
     display: none;
 }
 
@@ -423,16 +428,18 @@ textarea,
     font-weight: 400;
     font-style: normal;
 }
+
 .forum-regular {
-  font-family: "Forum", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal;
 }
+
 .eb-garamond-small {
-  font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 th,
@@ -479,9 +486,11 @@ h2 {
     font-size: 1.5em;
     font-weight: lighter;
 }
+
 h3 {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: lighter;
+    margin-bottom: 0.4em;
 }
 
 h4 {
@@ -598,6 +607,12 @@ table {
 
 .text-xl {
     font-size: 3em;
+    margin-top: 1em;
+}
+
+.breadcrumb {
+    margin: 1em 0;
+    display: inline-block;
 }
 
 .text-sm {
@@ -755,10 +770,6 @@ label:has(+ :required):after {
     font-weight: bold;
 }
 
-img {
-    width: 100%;
-}
-
 @media screen and (min-width: 48em) {
     .flex-even {
         min-width: unset;
@@ -795,6 +806,7 @@ img {
     background: #F8F6F1;
     padding: 0;
 }
+
 .hero-content {
     display: flex;
     justify-content: space-between;
@@ -802,24 +814,29 @@ img {
     max-width: 100vw;
     margin: 0 auto;
     padding: 0em 0 0em 0;
-    min-height: 700px;
+    min-height: 100vh;
 }
+
 .hero-right-bg {
     flex: 1;
-    background: #D6D2C4; /* or your chosen accent color */
+    background: #D6D2C4;
+    /* or your chosen accent color */
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 700px;
+    min-height: 100vh;
     width: 100%;
     border-radius: 0;
 }
+
 .drawing-preview img {
-    max-width: 400px;
+    max-height: 90vh;
+    /* max-height: 90%; */
     border: 6px solid #fff;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
     background: #fff;
 }
+
 .logo-block {
     flex: 1;
     text-align: center;
@@ -828,10 +845,12 @@ img {
     justify-content: center;
     align-items: center;
 }
+
 .logo-img {
     max-width: 10em;
     margin: 0 0 1.5em 0;
 }
+
 .hero-title {
     font-size: 1.5em;
     font-family: "Forum", serif;
@@ -839,12 +858,14 @@ img {
     letter-spacing: 0.02em;
     padding: 0 1em 0 1em;
 }
+
 .hero-desc {
     font-size: 0.9em;
     font-family: "EB Garamond", serif;
     margin-bottom: 3em;
     padding: 0 1em 0 1em;
 }
+
 .hero-btn {
     background: #333;
     color: #fff;
@@ -856,15 +877,10 @@ img {
     border: none;
     margin-top: 1em;
 }
+
 .drawing-preview {
     flex: 1;
     text-align: center;
-}
-.drawing-preview img {
-    max-width: 400px;
-    border: 6px solid #fff;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
-    background: #fff;
 }
 
 /* Packages/Prices Section */
@@ -872,19 +888,23 @@ img {
     background: #F8F6F1;
     padding: 6em 0 6em 0;
 }
+
 .package-inner {
     display: flex;
     gap: 4em;
     margin: 0 auto;
     align-items: flex-start;
 }
+
 .package-left {
     width: 100%;
 }
+
 .package-right {
     min-width: 50%;
     width: 100%;
 }
+
 .section-title {
     font-family: "Forum", serif;
     font-size: 1.2em;
@@ -892,19 +912,20 @@ img {
     margin-bottom: 1.5em;
     letter-spacing: 0.02em;
 }
+
 .price-list {
     list-style: none;
     padding: 0;
     margin: 0 0 1em 0;
 }
+
 .price-list li {
     display: flex;
     justify-content: space-between;
-    font-size: 1em;
-    margin-bottom: 0.5em;
 }
-.price-list span {
-    font-size: 1em;
+
+.package-bottom {
+    margin-top: 0.4em;
 }
 
 /* Projects Section */
@@ -912,12 +933,14 @@ img {
     background: #F8F6F1;
     padding: 1em 0 2em 0;
 }
+
 .projects-section .section-title {
     text-align: center;
     width: 100%;
     display: block;
     margin-bottom: 0.5em;
 }
+
 .projects-list {
     display: flex;
     gap: 2em;
@@ -927,12 +950,14 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
 .project-card {
     padding: 1em;
     text-align: center;
     border-radius: 0px;
     width: 297px;
 }
+
 .project-card img {
     width: 100%;
     height: 260px;
@@ -941,6 +966,7 @@ img {
     margin-bottom: 0.7em;
     cursor: pointer;
 }
+
 .project-title {
     font-size: 1em;
     font-family: "Forum", serif;
@@ -950,40 +976,46 @@ img {
 /* Testimonials Section */
 .testimonial-bg {
     background: #E2DED3;
-    padding: 6em 0;
 }
+
 .testimonials-section {
     margin: 0 auto;
+    padding: 6em 0;
 }
+
 .testimonials-section .section-title {
     text-align: center;
     width: 100%;
     display: block;
     margin-bottom: 0.5em;
 }
+
 .testimonial-desc {
     text-align: center;
     font-size: 1em;
     margin-top: 0;
     margin-bottom: 4em;
 }
+
 .testimonials-list {
     display: flex;
     gap: 2em;
     justify-content: center;
     align-items: flex-start;
 }
+
 .testimonial-card {
     background: #fff;
     padding: 1.5em;
     border-radius: 0%;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
     font-size: 0.95em;
     width: 460px;
     display: flex;
     flex-direction: column;
     height: auto;
 }
+
 .testimonial-author {
     font-weight: bold;
     font-size: 0.95em;
@@ -994,21 +1026,25 @@ img {
 .contact-section {
     padding: 3em 0;
 }
+
 .contact-inner {
     display: flex;
     gap: 0;
     margin: 0 auto;
-    align-items: center; 
+    align-items: center;
     min-height: 650px;
 }
+
 .contact-details {
     flex: 1;
     padding-right: 0;
     max-width: 15em;
 }
+
 .contact-details h2 {
     margin-bottom: 1em;
 }
+
 .contact-btn {
     display: block;
     background: #333;
@@ -1023,10 +1059,12 @@ img {
     text-align: center;
     width: 180px;
 }
+
 .contact-form-block {
     flex: 1;
     padding-left: 0;
 }
+
 .contact-form-label {
     display: block;
     font-size: 0.95em;
@@ -1035,15 +1073,19 @@ img {
     text-align: left;
     font-family: "Forum", serif;
 }
+
 .contact-form-block form {
     background: #F7F5F0;
-    padding: 1.5em;
+    padding: 0 1.5em;
     border-radius: 8px;
 }
+
 .field {
     margin-bottom: 1em;
 }
-.input, textarea {
+
+.input,
+textarea {
     width: 100%;
     padding: 0.6em;
     border-radius: 2px;
@@ -1052,6 +1094,7 @@ img {
     font-family: inherit;
     margin-top: 0.3em;
 }
+
 .button {
     background: #333;
     color: #fff;
@@ -1064,28 +1107,60 @@ img {
     margin-top: 1em;
     min-width: 250px;
 }
-.button:hover, .contact-btn:hover {
+
+.button:hover,
+.contact-btn:hover {
     background: #222;
     color: #fff;
 }
 
 /* Responsive */
 @media (max-width: 900px) {
-    .hero-content, .package-inner, .contact-inner, .testimonials-list, .projects-list {
+
+    .hero-content,
+    .package-inner,
+    .contact-inner,
+    .testimonials-list,
+    .projects-list {
         flex-direction: column;
         align-items: center;
         gap: 2em;
     }
-    .drawing-preview img {
-        max-width: 100%;
+
+    .logo-block {
+        padding: 2em 0;
     }
-    .contact-details, .contact-form-block {
+
+    .contact-details,
+    .contact-form-block {
         padding: 0;
         width: 100%;
     }
-    .testimonial-card, .project-card {
+
+    .testimonial-card,
+    .project-card {
         width: 90vw;
         max-width: 300px;
     }
-}
 
+    .package-section,
+    .testimonials-section {
+        padding: 3em 0 3em 0;
+    }
+
+    .contact-form-block form {
+        padding: 0;
+    }
+
+    .button {
+        min-width: 100%;
+    }
+
+    .hero-right-bg {
+        min-height: 95vh;
+    }
+
+    .carousel-image {
+        max-width: 100%;
+    }
+}
