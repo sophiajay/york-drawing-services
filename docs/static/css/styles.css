@@ -883,6 +883,7 @@ img {
 } */
 .package-right {
     min-width: 50%;
+    width: 100%;
 }
 .section-title {
     font-family: "Forum", serif;
