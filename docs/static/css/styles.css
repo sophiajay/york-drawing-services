@@ -826,11 +826,10 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 2em;
 }
 .logo-img {
     max-width: 10em;
-    margin: 0 auto 1.5em auto;
+    margin: 0 0 1.5em 0;
 }
 .hero-title {
     font-size: 1.8em;
@@ -994,7 +993,6 @@ img {
 .contact-inner {
     display: flex;
     gap: 0;
-    max-width: 1000px;
     margin: 0 auto;
     align-items: center; 
     min-height: 650px;
@@ -1002,7 +1000,7 @@ img {
 .contact-details {
     flex: 1;
     padding-right: 0;
-    max-width: 40%;
+    max-width: 15em;
 }
 .contact-details h2 {
     margin-bottom: 1em;
