@@ -737,11 +737,6 @@ label:has(+ :required):after {
     font-size: 0.5em;
 }
 
-.logo-img {
-    max-width: 15em;
-    margin: 1.7em auto;
-}
-
 .star-img {
     display: inline;
     width: auto;
@@ -835,20 +830,19 @@ img {
     padding: 0 2em;
 }
 .logo-img {
-    max-width: 120px;
+    max-width: 8em;
     margin: 0 auto 1.5em auto;
 }
 .hero-title {
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-family: "Forum", serif;
     font-weight: 400;
-    margin-bottom: 1em;
     letter-spacing: 0.02em;
 }
 .hero-desc {
-    font-size: 0.95em;
+    font-size: 0.9em;
     font-family: "EB Garamond", serif;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 }
 .hero-btn {
     background: #333;
