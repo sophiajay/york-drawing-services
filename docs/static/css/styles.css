@@ -1009,6 +1009,7 @@ img {
 .contact-details {
     flex: 1;
     padding-right: 0;
+    max-width: 40%;
 }
 .contact-details h2 {
     font-size: 1.1em;
