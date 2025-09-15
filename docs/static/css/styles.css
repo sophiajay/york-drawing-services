@@ -811,7 +811,7 @@ img {
     justify-content: center;
     align-items: center;
     min-height: 700px;
-    min-width: 50%;
+    width: 100%;
     border-radius: 0;
 }
 .drawing-preview img {
@@ -876,9 +876,9 @@ img {
     margin: 0 auto;
     align-items: flex-start;
 }
-.package-left {
+/* .package-left {
     max-width: 40%;
-}
+} */
 .package-right {
     min-width: 50%;
 }
