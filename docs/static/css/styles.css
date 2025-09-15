@@ -514,8 +514,7 @@ table {
 /* Container */
 
 .container {
-    width: 100%;
-    max-width: 980px;
+    max-width: 80%;
     margin: 0 auto 1em auto;
 }
 
