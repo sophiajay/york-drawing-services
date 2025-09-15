@@ -477,7 +477,7 @@ h1 {
 
 h2 {
     font-size: 1.5em;
-    margin: 1.2em 0 0.4em 0;
+    margin: 0.4em 0 0.4em 0;
     font-weight: lighter;
 }
 h3 {
@@ -876,7 +876,7 @@ img {
 /* Packages/Prices Section */
 .package-section {
     background: #F8F6F1;
-    padding: 3em 0 2em 0;
+    padding: 3em 0 1em 0;
 }
 .package-inner {
     display: flex;
