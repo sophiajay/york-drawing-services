@@ -884,6 +884,9 @@ img {
     margin: 0 auto;
     align-items: flex-start;
 }
+.package-left {
+    max-width: 40%;
+}
 .section-title {
     font-family: "Forum", serif;
     font-size: 1.2em;
