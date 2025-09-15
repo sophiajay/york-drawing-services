@@ -978,6 +978,7 @@ img {
     display: flex;
     gap: 2em;
     justify-content: center;
+    align-items: flex-start;
 }
 .testimonial-card {
     background: #fff;
@@ -986,6 +987,9 @@ img {
     box-shadow: 0 2px 8px rgba(0,0,0,0.03);
     font-size: 0.95em;
     width: 460px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
 }
 .testimonial-author {
     margin-top: 1em;
