@@ -878,9 +878,9 @@ img {
     margin: 0 auto;
     align-items: flex-start;
 }
-/* .package-left {
+.package-left {
     max-width: 40%;
-} */
+}
 .package-right {
     min-width: 50%;
     width: 100%;
