@@ -879,7 +879,7 @@ img {
     align-items: flex-start;
 }
 .package-left {
-    max-width: 40%;
+    width: 100%;
 }
 .package-right {
     min-width: 50%;
