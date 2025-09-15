@@ -477,7 +477,6 @@ h1 {
 
 h2 {
     font-size: 1.5em;
-    margin: 0.4em 0 0.4em 0;
     font-weight: lighter;
 }
 h3 {
@@ -956,7 +955,7 @@ img {
 /* Testimonials Section */
 .testimonial-bg {
     background: #E2DED3;
-    padding: 2em 0;
+    padding: 6em 0;
 }
 .testimonials-section {
     max-width: 980px;
@@ -972,7 +971,7 @@ img {
     text-align: center;
     font-size: 1em;
     margin-top: 0;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
 }
 .testimonials-list {
     display: flex;
@@ -1015,8 +1014,6 @@ img {
     max-width: 40%;
 }
 .contact-details h2 {
-    font-size: 1.1em;
-    font-family: "Forum", serif;
     margin-bottom: 1em;
 }
 .contact-btn {
