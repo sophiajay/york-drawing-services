@@ -473,7 +473,8 @@ main {
 
 a {
     text-decoration: underline;
-    color: #455763;
+    color: #303030;
+    text-decoration: none;
 }
 
 h1 {
@@ -524,7 +525,7 @@ table {
 
 .container {
     max-width: 75%;
-    margin: 0 auto 1em auto;
+    margin: 0 auto 0 auto;
 }
 
 .container-inner {
@@ -929,9 +930,12 @@ label:has(+ :required):after {
 }
 
 /* Projects Section */
+.projects-bg {
+    background: #E2DED3;
+}
+
 .projects-section {
-    background: #F8F6F1;
-    padding: 1em 0 2em 0;
+    padding: 0 0 6em 0;
 }
 
 .projects-section .section-title {
@@ -943,7 +947,7 @@ label:has(+ :required):after {
 
 .projects-list {
     display: flex;
-    gap: 2em;
+    gap: 1em;
     justify-content: center;
     margin-top: 2em;
     max-width: 2000px;
@@ -952,25 +956,29 @@ label:has(+ :required):after {
 }
 
 .project-card {
-    padding: 1em;
     text-align: center;
-    border-radius: 0px;
-    width: 297px;
+    min-width: 300px;
 }
 
 .project-card img {
-    width: 100%;
-    height: 260px;
     object-fit: cover;
+    height: 200px;
+    width: 300px;
     border-radius: 0px;
     margin-bottom: 0.7em;
     cursor: pointer;
 }
 
 .project-title {
-    font-size: 1em;
+    font-size: 1.1em;
     font-family: "Forum", serif;
-    margin-top: 0.5em;
+    text-align: left;
+}
+
+.project-desc{
+    text-align: left;
+    margin-top: 0.35em;
+    font-size: 90%;
 }
 
 /* Testimonials Section */
@@ -1112,6 +1120,108 @@ textarea {
 .contact-btn:hover {
     background: #222;
     color: #fff;
+}
+
+/* Projects Pages */
+.projects-header .section-title{
+    padding: 2em 0 2em 0;
+    text-align: left;
+    background: #D6D2C4;
+    font-size: 1.5em;
+    padding-left: 12.5vw;
+}
+
+.projects-header hr { 
+    margin: 2em auto;
+    width: 75%;
+    justify-content: center;
+}
+
+.project-details {
+    display: flex;
+    align-items: start;
+    padding-bottom: 1em;
+}
+
+.main-img {
+    display: flex;
+    max-height: 60vh;
+}
+
+.main-img img {
+    width: 100vw;
+    object-fit: cover;
+}
+
+.project-para h2 {
+    font-size: 1.1em;
+    padding: 1.5em;
+}
+
+.details-title {
+    font-size: 1.1em;
+    padding-bottom: 1em;
+    width: 40%;
+}
+
+.details-desc {
+    text-align: right;
+    margin-left: auto;
+    max-width: 80%
+}
+
+.details-highlights {
+    display: flex;
+    justify-content: right;
+}
+
+.details-highlights td {
+    padding: 0 0 1em 2em;
+    font-size: 0.8em;
+}
+
+.plan {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-collage{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-top: 2em;
+}
+
+.collage-column {
+  flex: 33.3%;
+  padding: 0 4px;
+}
+
+.collage-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.project-plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em
+}
+
+.project-plans img {
+    width: 100%
+}
+
+.project-plans figcaption {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+}
+
+.plan-card {
+    max-width: 40%;
 }
 
 /* Responsive */
