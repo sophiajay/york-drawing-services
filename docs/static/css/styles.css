@@ -1302,6 +1302,7 @@ textarea {
     .details-desc {
         text-align: left;
         margin-left: 0;
+        width: 100%;
     }
     .project-collage{
         flex-direction: column;
