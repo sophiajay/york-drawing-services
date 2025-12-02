@@ -1296,6 +1296,9 @@ textarea {
     .project-details{
         flex-direction: column;
     }
+    .details-title {
+        width: 100%;
+    }
     .details-desc {
         text-align: left;
         margin-left: 0;
