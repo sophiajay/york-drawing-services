@@ -1299,7 +1299,7 @@ textarea {
     .details-title {
         width: 100%;
     }
-    .details-desc {
+    .details-content .details-desc {
         text-align: left;
         margin-left: 0;
         width: 100%;
