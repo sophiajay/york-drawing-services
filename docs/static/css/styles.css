@@ -1207,7 +1207,7 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1em
+    gap: 2em
 }
 
 .project-plans img {
@@ -1218,10 +1218,11 @@ textarea {
     text-align: center;
     font-size: 0.9em;
     margin-top: 0.5em;
+    background: #D6D2C4;
 }
 
 .plan-card {
-    max-width: 40%;
+    max-width: 35%;
 }
 
 /* Responsive */
