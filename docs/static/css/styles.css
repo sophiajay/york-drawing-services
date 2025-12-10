@@ -977,6 +977,7 @@ label:has(+ :required):after {
     text-align: left;
     margin-top: 0.35em;
     font-size: 90%;
+    max-width: 99%;
 }
 
 /* Testimonials Section */
