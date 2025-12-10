@@ -1123,13 +1123,13 @@ textarea {
 /* Projects Pages */
 .title-and-links {
     display: flex;
-    margin-bottom: 2em;
+    padding: 0.5em 0;
     background: #D6D2C4;
-    padding-top: 0.5em;
+    align-items: center;
 }
 
 .header-titles {
-    margin-left: 12.5vw;
+    margin-left: 5vw;
 }
 
 .header-titles .project-name {
@@ -1139,14 +1139,13 @@ textarea {
 
 .title-and-links .header-link {
     margin-left: auto;
-    margin-right: 12.5vw;
+    margin-right: 5vw;
     font-size: 0.8em;
-    padding-top: 0.255em;
 }
 
 .title-and-links .header-link .header-items {
     margin-left: 1em;
-    padding: 0.5em;
+    padding: 0.5em 0;
 }
 
 .title-and-links .header-link .header-items .phone {
@@ -1171,9 +1170,10 @@ textarea {
 }
 
 .project-details {
-    display: flex;
     align-items: start;
-    padding-bottom: 1em;
+    padding: 2em 0;
+    width: 75vw;
+    margin: auto;
 }
 
 .main-img {
@@ -1186,6 +1186,19 @@ textarea {
     object-fit: cover;
 }
 
+.project-overview {
+    margin: 2em auto;
+}
+
+.project-overview h2 {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+.project-overview p {
+    margin: 0 0 0.5em 0;
+}
+
 .project-para h2 {
     font-size: 1.1em;
     padding: 1.5em;
@@ -1193,14 +1206,13 @@ textarea {
 
 .details-title {
     font-size: 1.1em;
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
     width: 45%;
 }
 
-.details-desc {
-    text-align: right;
-    margin-left: auto;
-    max-width: 90%
+.details-desc { 
+    margin: 0;
+    font-size: 0.9em;
 }
 
 .details-highlights {
@@ -1240,7 +1252,6 @@ textarea {
     display: flex;
     justify-content: center;
     gap: 2em;
-    padding-top: 2em;
 }
 
 .project-plans img {
@@ -1260,6 +1271,10 @@ textarea {
 .plan-card-desc h2 {
     padding-bottom: 0.5em;
     font-size: 1.1em;
+}
+
+.plan-card-desc p {
+    margin: 0;
 }
 
 /* Responsive */
@@ -1291,6 +1306,9 @@ textarea {
         max-width: 300px;
     }
 
+    .project-details {
+        width: 80vw;
+    }
     .package-section,
     .testimonials-section {
         padding: 3em 0 3em 0;
@@ -1311,16 +1329,9 @@ textarea {
     .carousel-image {
         max-width: 100%;
     }
-    .project-details{
-        flex-direction: column;
-    }
+
     .details-title {
         width: 100%;
-    }
-    .details-content .details-desc {
-        text-align: left;
-        margin-left: 0;
-        min-width: 100%;
     }
     .details-content .details-highlights {
         justify-content: left;
