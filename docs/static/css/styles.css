@@ -1144,6 +1144,20 @@ textarea {
     padding-top: 0.255em;
 }
 
+.title-and-links .header-link .header-items {
+    margin-left: 1em;
+    padding: 0.5em;
+}
+
+.title-and-links .header-link .header-items .phone {
+    background-color: #ebe9e2;
+    padding: 0.5em;
+}
+
+.title-and-links .header-link .header-items .icon {
+    font-size: 0.7em
+}
+
 .projects-header .section-header {
     text-align: left;
     font-size: 1em;
@@ -1180,13 +1194,13 @@ textarea {
 .details-title {
     font-size: 1.1em;
     padding-bottom: 1em;
-    width: 40%;
+    width: 45%;
 }
 
 .details-desc {
     text-align: right;
     margin-left: auto;
-    max-width: 80%
+    max-width: 90%
 }
 
 .details-highlights {
@@ -1224,9 +1238,9 @@ textarea {
 
 .project-plans {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 2em
+    gap: 2em;
+    padding-top: 2em;
 }
 
 .project-plans img {
@@ -1242,6 +1256,10 @@ textarea {
 
 .plan-card {
     max-width: 30%;
+}
+.plan-card-desc h2 {
+    padding-bottom: 0.5em;
+    font-size: 1.1em;
 }
 
 /* Responsive */
@@ -1304,10 +1322,20 @@ textarea {
         margin-left: 0;
         min-width: 100%;
     }
+    .details-content .details-highlights {
+        justify-content: left;
+    }
+    .details-content .details-highlights td {
+        padding: 0 2em 1em 0em;
+    }
+    .project-plans {
+        flex-wrap: wrap;
+    }
     .project-collage{
         flex-direction: column;
     }
     .plan-card {
     max-width: 75%;
-}
+    }
+
 }
