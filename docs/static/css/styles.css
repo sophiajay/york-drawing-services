@@ -1171,7 +1171,7 @@ textarea {
 
 .project-details {
     align-items: start;
-    padding: 2em 0;
+    padding: 3em 0;
     width: 75vw;
     margin: auto;
 }
@@ -1187,7 +1187,7 @@ textarea {
 }
 
 .project-overview {
-    margin: 2em auto;
+    margin: 3em auto;
 }
 
 .project-overview h2 {
@@ -1234,7 +1234,7 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    padding-top: 2em;
+    padding-top: 3em;
 }
 
 .collage-column {
