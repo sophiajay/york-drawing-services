@@ -1127,6 +1127,9 @@ textarea {
     padding: 0.5em 0;
     background: #D6D2C4;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    box-shadow: rgb(158 152 130 / 60%) 0px 3px 3px;
 }
 
 .header-titles {
@@ -1172,7 +1175,7 @@ textarea {
 
 .project-details {
     align-items: start;
-    padding: 3em 0;
+    padding: 5em 0 3em 0;
     width: 75vw;
     margin: auto;
 }
