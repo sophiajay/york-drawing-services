@@ -1,3 +1,7 @@
+all: build
+	sleep 2 && open http://localhost:8001 &
+	$(MAKE) -j 2 build-watch run
+
 build:
 	node build.js
 

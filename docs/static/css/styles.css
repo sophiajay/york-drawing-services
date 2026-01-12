@@ -1190,6 +1190,14 @@ textarea {
     object-fit: cover;
 }
 
+.main-img-2 {
+    display: flex;
+}
+.main-img-2 img {
+    max-width: 50vw;
+    object-fit: cover;
+}
+
 .project-overview {
     margin: 3em auto;
 }
@@ -1278,7 +1286,7 @@ textarea {
 }
 
 .plan-card-desc p {
-    margin: 0;
+    margin: 0 0 0.5em 0;
 }
 
 /* Responsive */
@@ -1317,6 +1325,14 @@ textarea {
     .testimonials-section {
         padding: 3em 0 3em 0;
     }
+
+    .main-img-2 {
+    display: block;
+}
+.main-img-2 img {
+    object-fit: cover;
+    max-width: 100%;
+}
 
     .contact-form-block form {
         padding: 0;
