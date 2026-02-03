@@ -1042,6 +1042,7 @@ label:has(+ :required):after {
 
 .testimonials-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 2em;
     justify-content: center;
     align-items: stretch;
@@ -1348,6 +1349,32 @@ textarea {
 
 .plan-card-desc p {
     margin: 0 0 0.5em 0;
+}
+
+/* Testimonials Page */
+
+.testimonials-title {
+    text-align: center;
+    font-size: 2em;
+}
+
+.google-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5em;
+}
+
+.google-link img { 
+    max-height: 2em;
+    margin: 0 0.5em 0 0;
+}
+
+.google-text p {
+    margin: 0;
+}
+
+.orange {
+    color: #E37400
 }
 
 /* Responsive */
