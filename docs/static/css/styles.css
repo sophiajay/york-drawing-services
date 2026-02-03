@@ -1245,7 +1245,11 @@ textarea {
     max-height: 60vh;
 }
 
-.main-img img {
+main-img-tawny {
+    display: flex;
+}
+
+.main-img, .main-img-tawny img {
     width: 100vw;
     object-fit: cover;
 }
