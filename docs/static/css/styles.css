@@ -1432,15 +1432,23 @@ main-img-tawny {
     padding: 0.5em;
 }
 
-.blog-details img {
+.blog-main img {
     max-width: 500px;
+    margin: auto;
+}
+
+.blog-main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 
 .blog-title {
     text-align: center;
-    padding-bottom: 1.1em;
+    padding: 3em 0 1.5em 0;
     width: 80vw;
     font-size: 2em;
+    margin: auto;
 }
 
 .blog-content {
@@ -1448,6 +1456,9 @@ main-img-tawny {
     padding-top: 1.5em;
     margin: 0;
     font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 
 .blog-content p {
@@ -1584,7 +1595,7 @@ main-img-tawny {
         max-width: 75%;
     }
 
-    .blog-details img {
+    .blog-main img {
         max-width: 100vw;
     }
 
