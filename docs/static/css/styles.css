@@ -127,7 +127,8 @@ abbr[title] {
 
 b,
 strong {
-    font-weight: bolder;
+    font-weight: 1000;
+    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
 }
 
 /**
@@ -710,7 +711,7 @@ fieldset:disabled .button {
     cursor: not-allowed;
 }
 
-ul {
+ul, ol {
     font-size: 0.8em;
     font-family: "Forum", serif;
     padding-left: 2em;
@@ -718,7 +719,7 @@ ul {
     margin-bottom: 0.5em;
 }
 
-ul li {
+ul li, ol li {
     padding-bottom: 0.5em;
 }
 
@@ -1065,7 +1066,8 @@ label:has(+ :required):after {
     font-size: 1em;
 }
 
-.testimonial-author {
+.testimonial-author,
+.blog-author {
     font-weight: bold;
     font-size: 0.95em;
     color: #333;
@@ -1233,7 +1235,8 @@ textarea {
     justify-content: center;
 }
 
-.project-details {
+.project-details,
+.blog-details {
     align-items: start;
     padding: 5em 0 3em 0;
     width: 75vw;
@@ -1381,6 +1384,97 @@ main-img-tawny {
     color: #E37400
 }
 
+/* Blog Page */
+.blog-card img{
+    max-width: 100%;
+}
+
+.blog-details {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 0.5em;
+}
+
+.blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 75vw;
+    margin: auto;
+}
+
+.blog-card {
+    /* background: #fff; */
+    border-radius: 0%;
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03); */
+    font-size: 0.95em;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blog-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.blog-card-details {
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0.5em;
+}
+
+.blog-card a {
+    padding: 0.5em;
+}
+
+.blog-details img {
+    max-width: 500px;
+}
+
+.blog-title {
+    text-align: center;
+    padding-bottom: 1.1em;
+    width: 80vw;
+    font-size: 2em;
+}
+
+.blog-content {
+    width: 85vw;
+    padding-top: 1.5em;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.blog-content p {
+    margin-bottom: 0.5em;
+}
+
+.blog-content h2 {
+    font-size: 1.2em;
+    margin: 1.1em 0 0.5em 0;
+}
+.blog-content ul, .blog-content ol {
+    padding: 0.5em 0 0.5em 1.5em;
+}
+
+.blog-content li {
+    padding-bottom: 0;;
+}
+
+.hyper {
+    text-decoration: underline;
+}
+
+.hyper:hover {
+    color: #9f9f9f;
+    text-decoration: none;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
 
@@ -1389,7 +1483,8 @@ main-img-tawny {
     .package-inner,
     .contact-inner,
     .testimonials-list,
-    .projects-list {
+    .projects-list,
+    .blog-list {
         flex-direction: column;
         align-items: center;
         gap: 2em;
@@ -1429,7 +1524,9 @@ main-img-tawny {
         max-width: 300px;
     }
 
-    .project-details {
+    .project-details,
+    .blog-list,
+    .blog-card {
         width: 80vw;
     }
 
@@ -1485,6 +1582,10 @@ main-img-tawny {
 
     .plan-card {
         max-width: 75%;
+    }
+
+    .blog-details img {
+        max-width: 100vw;
     }
 
 }
