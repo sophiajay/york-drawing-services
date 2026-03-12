@@ -1560,7 +1560,8 @@ main-img-tawny {
     }
 
     .button {
-        min-width: 100%;
+        min-width: 75vw;
+        display: block;
     }
 
     .hero-right-bg {
