@@ -901,6 +901,9 @@ label:has(+ :required):after {
 .company-overview-block {
     padding: 0 5em 0 1.5em;
     flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .company-overview-block p {
@@ -1108,6 +1111,9 @@ label:has(+ :required):after {
     flex: 1;
     padding-right: 0;
     max-width: 15em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-details h2 {
@@ -1175,6 +1181,8 @@ textarea {
     border: none;
     margin-top: 1em;
     min-width: 250px;
+    max-width: 75vw;
+}
 }
 
 .button:hover,
@@ -1560,7 +1568,6 @@ main-img-tawny {
     }
 
     .button {
-        min-width: 75vw;
         display: block;
     }
 
@@ -1598,6 +1605,10 @@ main-img-tawny {
 
     .blog-main img {
         max-width: 100vw;
+    }
+
+    .blog-title {
+        font-size: 1.3em;
     }
 
 }
