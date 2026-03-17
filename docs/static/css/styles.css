@@ -1193,11 +1193,12 @@ textarea {
 .title-and-links {
     display: flex;
     padding: 0.5em 0;
-    background: #D6D2C4;
+    background: #2f2f2f;
     align-items: center;
     position: fixed;
     width: 100%;
-    box-shadow: rgb(158 152 130 / 60%) 0px 3px 3px;
+    box-shadow: rgb(47 47 47 / 60%) 0px 3px 3px;
+    z-index: 1;
 }
 
 .header-titles {
@@ -1209,6 +1210,10 @@ textarea {
     padding: 1.5em 0 1em 0;
 }
 
+.header-titles a {
+    color: #ffffff;
+}
+
 .title-and-links .header-link {
     margin-left: auto;
     margin-right: 5vw;
@@ -1218,10 +1223,11 @@ textarea {
 .title-and-links .header-link .header-items {
     margin-left: 1em;
     padding: 0.5em 0;
+    color: #ffffff;
 }
 
 .title-and-links .header-link .header-items .phone {
-    background-color: #ebe9e2;
+    background-color: #618fb2;
     padding: 0.5em;
 }
 
@@ -1233,6 +1239,7 @@ textarea {
     text-align: left;
     font-size: 1em;
     margin: 0;
+    max-width: 30vw;
 }
 
 .projects-header hr {
