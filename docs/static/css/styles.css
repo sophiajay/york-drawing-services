@@ -1024,6 +1024,11 @@ label:has(+ :required):after {
     font-size: 1em;
 }
 
+.testimonials-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .testimonials-list {
     display: flex;
     flex-wrap: wrap;
@@ -1176,17 +1181,20 @@ textarea {
 /* Projects Pages */
 .title-and-links {
     display: flex;
-    padding: 0.5em 0;
+    padding: 0.5em 5vw;
     background: #2f2f2f;
     align-items: center;
+    justify-content: space-between;
     position: fixed;
+    top: 0;
     width: 100%;
     box-shadow: rgb(47 47 47 / 60%) 0px 3px 3px;
     z-index: 1;
 }
 
 .header-titles {
-    margin-left: 5vw;
+    position: relative;
+    z-index: 10;
 }
 
 .header-titles .project-name {
@@ -1202,48 +1210,18 @@ textarea {
     margin-left: auto;
     margin-right: 5vw;
     font-size: 0.8em;
+    display: flex;
 }
 
-.title-and-links .header-link .header-items {
-    margin-left: 1em;
-    padding: 0.5em 0;
-    color: #ffffff;
-}
-
-.title-and-links .header-link .header-items .phone {
+.phone {
     background-color: #618fb2;
     padding: 0.5em;
 }
 
-.title-and-links .header-link .header-items .icon {
+.phone .icon {
     font-size: 0.7em
 }
 
-/* Dropdown Menu */
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.header-dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.header-dropdown .dropdown-content a {
-    color: #333;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
 
 .projects-header .section-header {
     text-align: left;
@@ -1513,8 +1491,137 @@ main-img-tawny {
     text-decoration: none;
 }
 
+
+
+/* Navigation */
+
+/* Menu Icon */
+.hamb {
+    cursor: pointer;
+    padding: 40px 20px;
+    float: right;
+}
+
+/* Style label tag */
+
+.hamb-line {
+    background: white;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+
+}
+
+/* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after {
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.hamb-line::before {
+    top: 5px;
+}
+
+.hamb-line::after {
+    top: -5px;
+}
+
+.side-menu {
+    display: none;
+}
+
+/* Hide checkbox */
+
+
+nav {
+    overflow: hidden;
+}
+
+.menu {
+    display: flex;
+    gap: 2em;
+}
+
+.menu li,
+.menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu li a {
+    display: block;
+    padding: 0.5em;
+    color: white;
+}
+
+.menu a:hover {
+    background-color: #292929;
+}
+
+.hamb {
+    display: none;
+}
+
+
 /* Responsive */
 @media (max-width: 900px) {
+
+    nav {
+        top: 0;
+        left: 0;
+        max-height: 0;
+        transition: max-height .5s ease-out;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-color: #2f2f2f;
+        overflow: hidden;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        gap: 0;
+    }
+
+    /* Toggle menu icon */
+    .side-menu:checked~nav {
+        max-height: 100%;
+    }
+
+    .side-menu:checked~.hamb .hamb-line {
+        background: transparent;
+    }
+
+    .side-menu:checked~.hamb .hamb-line::before {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .side-menu:checked~.hamb .hamb-line::after {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    body:has(.side-menu:checked) {
+        overflow: hidden;
+    }
+
+    /* Nav menu */
+    .hamb {
+        display: block;
+    }
 
     .hero-content,
     .overview-content,
@@ -1625,7 +1732,7 @@ main-img-tawny {
     }
 
     .projects-section {
-    padding: 3em 0 3em 0;
+        padding: 3em 0 3em 0;
     }
 
     .plan-card {

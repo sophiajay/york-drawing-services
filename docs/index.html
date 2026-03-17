@@ -11,37 +11,41 @@
         content="architectural drawings, house plans, building plans, home design, renovation plans, extension plans, planning drawings, York architecture, architectural services York, York building plans, York house plans, design my house York, architectural design York, drawings for house, building design, draughtsman york, draughtsman, draughtsman services york, draughting services, draughting services york">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Forum&display=swap" rel="stylesheet">    <link rel="shortcut icon" href="/favicon.ico" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Forum&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="/static/css/styles.css">
     <script src="/static/js/main.js" defer></script>
 </head>
 
 <body>
-    <main class="content">
-        <!-- HEADER SECTION -->
-<div class="projects-header">
-    <div class="title-and-links">
+    
+    <!-- HEADER SECTION -->
+    <header class="title-and-links">
         <div class="header-titles">
-            <h1 class="section-header"><a href="https://yorkdrawingservices.com/">York Drawing Services</a></h1>
-            <!-- <h1 class="project-name">IVY HOLME</h1> -->
+            <a href="https://yorkdrawingservices.com/">York Drawing Services</a>
         </div>
-        <div class="header-link">
-            <div class="header-dropdown">
-            <a class="header-items" href="/">Menu</a>
-            <div class="dropdown-content">
-                <a href="/pages/blog">Blog</a>
-                <a href="/pages/reviews">Reviews</a>
-            </div>
-            <a class="header-items" href="tel:07353765766">
-                <x class="phone">
-                    <small class="icon">&#128222;</small> 07353 765766
-                </x>
-            </a>
-        </div>
-    </div>
-</div>
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu" />
+        <!-- Menu -->
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="/#projects">Projects</a></li>
+                <li><a href="/pages/reviews">Reviews</a></li>
+                <li><a href="/pages/blog">Blog</a></li>
+                <li>
+                    <a class="phone" href="tel:07353765766">
+                        <small class="icon">&#128222;</small> 07353 765766
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+    </header>
 
-<!-- HERO SECTION -->
+    <main class="content">
+        <!-- HERO SECTION -->
 <div class="hero-bg">
     <div class="hero-content">
         <div class="logo-block">
