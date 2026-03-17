@@ -451,7 +451,7 @@ td {
 }
 
 body {
-    background: #F8F6F1;
+    background: #fafafa;
     color: #303030;
     font-size: 1.25em;
     margin: 0;
@@ -546,10 +546,10 @@ table {
 /* Footer */
 
 .footer {
-    background-color: #D6D2C4;
+    background-color: #2f2f2f;
     margin-top: 3em;
     font-size: 0.8em;
-    /* color: rgba(255, 255, 255, 0.7); */
+    color: #fafafa;
     padding-top: 3em;
     padding-bottom: 3em;
 }
@@ -565,11 +565,11 @@ table {
 }
 
 .footer-link {
-    color: #303030;
+    color: #fafafa;
 }
 
 .footer-link:hover {
-    color: #364650;
+    color: #c0d8e7;
 }
 
 .footer-list {
@@ -804,7 +804,7 @@ label:has(+ :required):after {
 
 /* Add below existing code for new layout and style */
 .hero-bg {
-    background: #F8F6F1;
+    /* background: #F8F6F1; */
     padding: 0;
 }
 
@@ -820,7 +820,7 @@ label:has(+ :required):after {
 
 .hero-right-bg {
     flex: 1;
-    background: #D6D2C4;
+    /* background: #D6D2C4; */
     /* or your chosen accent color */
     display: flex;
     justify-content: center;
@@ -848,7 +848,7 @@ label:has(+ :required):after {
 }
 
 .logo-img {
-    max-width: 12em;
+    max-width: 15em;
 }
 
 .hero-title {
@@ -902,7 +902,7 @@ label:has(+ :required):after {
     padding: 0 5em 0 1.5em;
     flex: 1;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 }
 
@@ -1022,12 +1022,12 @@ label:has(+ :required):after {
 
 /* Testimonials Section */
 .testimonial-bg {
-    background: #E2DED3;
+    /* background: #E2DED3; */
 }
 
 .testimonials-section {
     margin: 0 auto;
-    padding: 6em 0;
+    /* padding: 6em 0; */
 }
 
 .testimonials-section .section-title {
@@ -1040,8 +1040,6 @@ label:has(+ :required):after {
 .testimonial-desc {
     text-align: center;
     font-size: 1em;
-    margin-top: 0;
-    margin-bottom: 4em;
 }
 
 .testimonials-list {
@@ -1150,7 +1148,7 @@ label:has(+ :required):after {
 }
 
 .contact-form-block form {
-    background: #F7F5F0;
+    /* background: #F7F5F0; */
     padding: 0 1.5em;
     border-radius: 8px;
 }
@@ -1524,11 +1522,12 @@ main-img-tawny {
     }
 
     .logo-block {
-        padding: 2em 0;
+        padding: 2em 0 0 0;
     }
 
     .company-overview-block {
         padding: 0 1.5em 0 1.5em;
+        align-items: center;
     }
 
     .contact-details,
@@ -1572,7 +1571,7 @@ main-img-tawny {
     }
 
     .hero-right-bg {
-        min-height: 95vh;
+        min-height: 70vh;
     }
 
     .carousel-image {
