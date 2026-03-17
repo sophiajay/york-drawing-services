@@ -1204,6 +1204,8 @@ textarea {
 
 .header-titles a {
     color: #ffffff;
+    font-family: "EB Garamond", serif;
+    letter-spacing: 1.5;
 }
 
 .title-and-links .header-link {
