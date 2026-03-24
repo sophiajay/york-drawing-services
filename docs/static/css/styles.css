@@ -1625,6 +1625,10 @@ nav {
         display: block;
     }
 
+    .menu-hide {
+        display: none;
+    }
+
     .hero-content,
     .overview-content,
     .package-inner,
