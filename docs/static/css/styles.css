@@ -835,7 +835,7 @@ label:has(+ :required):after {
     font-family: "Forum", serif;
     font-weight: 400;
     letter-spacing: 0.02em;
-    padding: 0 1em 0 1em;
+    padding: 0 1em 0.5em 1em;
 }
 
 .hero-desc {
