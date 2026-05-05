@@ -830,8 +830,22 @@ label:has(+ :required):after {
     align-items: center;
 }
 
+.logo-stack {
+    position: relative;
+    /* display: inline-flex;
+    justify-content: center;
+    align-items: center; */
+}
+
 .logo-img {
     max-width: 15em;
+}
+
+.award-img {
+    position: absolute;
+    top: 0;
+    right: -5em;
+    max-width: 7em;
 }
 
 .hero-title {
@@ -864,6 +878,36 @@ label:has(+ :required):after {
 .drawing-preview {
     flex: 1;
     text-align: center;
+}
+
+
+/* Award Section */
+.award {
+    display: flex;
+    padding: 3em 0;
+    flex-direction: column;
+}
+
+.award h2 {
+    margin: auto;
+    padding-bottom: 0.5em;
+    letter-spacing: 0.05em;
+}
+
+.award-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.award-logo {
+    width: 7.5em;
+}
+
+.award-title {
+    text-align: center;
+    max-width: 40vw;
 }
 
 /* Overview Section */
@@ -1066,8 +1110,9 @@ summary::after {
 }
 
 /* Testimonials Section */
+
 .testimonial-bg {
-    /* background: #E2DED3; */
+    background: transparent;
 }
 
 .testimonials-section {
@@ -1243,7 +1288,7 @@ textarea {
     background: #2f2f2f;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     box-shadow: rgb(47 47 47 / 60%) 0px 3px 3px;
@@ -1262,7 +1307,7 @@ textarea {
 
 .header-titles a {
     color: #ffffff;
-    font-family: "EB Garamond", serif;
+    /* font-family: "EB Garamond", serif; */
     letter-spacing: 1.5;
 }
 
@@ -1710,7 +1755,8 @@ nav {
 
     .hero-title,
     .company-overview-title,
-    .section-title {
+    .section-title,
+    .award-section-title {
         font-size: 1.5em;
         text-align: center;
         margin: auto;
@@ -1721,7 +1767,11 @@ nav {
     }
 
     .logo-block {
-        padding: 5em 0 0 0;
+        padding: 1em 0 0 0;
+    }
+
+    .award-img {
+        right: -3.5rem;
     }
 
     .company-overview-block {
