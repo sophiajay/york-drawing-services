@@ -9,7 +9,8 @@
 
         function handleSubmit(event) {
             event.preventDefault();
-            formStatus.classList.remove("success", "error");
+            formStatus.classList.remove("error");
+            formStatus.innerHTML = "";
             var data = new FormData(event.target);
             form.getElementsByTagName("fieldset")[0].setAttribute("disabled", "true")
             fetch(event.target.action, {
