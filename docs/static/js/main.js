@@ -2,10 +2,14 @@
 (function () {
     var registerFormHandler = function () {
         var form = document.getElementById("contact-form");
+        var messageActions = document.querySelector(".message-actions");
+        var messageDisplay = document.getElementById("contact-form-message");
+        var formStatus = document.getElementById("contact-form-status");
+        var sendAnotherBtn = document.getElementById("send-another-btn");
+
         function handleSubmit(event) {
             event.preventDefault();
-            var status = document.getElementById("contact-form-status");
-            status.classList.remove("success", "error");
+            formStatus.classList.remove("success", "error");
             var data = new FormData(event.target);
             form.getElementsByTagName("fieldset")[0].setAttribute("disabled", "true")
             fetch(event.target.action, {
@@ -16,27 +20,49 @@
                 }
             }).then(response => {
                 if (response.ok) {
-                    status.innerHTML = "Thanks for your message! We'll get back to you soon.";
-                    status.classList.add("success");
-                    form.reset()
+                    // Success: show message and hide form
+                    messageDisplay.innerHTML = "Thanks for your message! We'll get back to you soon.";
+                    form.reset();
+                    
+                    // Trigger animations
+                    form.classList.add("form-hidden");
+                    setTimeout(() => {
+                        messageActions.classList.add("visible");
+                    }, 400);
                 } else {
-                    status.classList.add("error");
+                    // Error: show error in form status
+                    formStatus.classList.add("error");
                     response.json().then(data => {
                         if (Object.hasOwn(data, 'errors')) {
-                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                            formStatus.innerHTML = data["errors"].map(error => error["message"]).join(", ")
                         } else {
-                            status.innerHTML = "Oops! There was a problem submitting your form"
+                            formStatus.innerHTML = "Oops! There was a problem submitting your form"
                         }
                     })
                 }
             }).catch(error => {
-                status.classList.add("error");
-                status.innerHTML = "Oops! There was a problem submitting your form"
+                formStatus.classList.add("error");
+                formStatus.innerHTML = "Oops! There was a problem submitting your form"
             }).finally(() => {
-                form.getElementsByTagName("fieldset")[0].setAttribute("disabled", "false")
+                form.getElementsByTagName("fieldset")[0].removeAttribute("disabled")
             });
         }
-        form.addEventListener("submit", handleSubmit)
+
+        function handleSendAnother() {
+            // Hide message and show form again
+            messageActions.classList.remove("visible");
+            setTimeout(() => {
+                form.classList.remove("form-hidden");
+                messageDisplay.classList.remove("error");
+                messageDisplay.innerHTML = "";
+                formStatus.classList.remove("error");
+                formStatus.innerHTML = "";
+                form.reset();
+            }, 400);
+        }
+
+        form.addEventListener("submit", handleSubmit);
+        sendAnotherBtn.addEventListener("click", handleSendAnother);
     }
 
     addEventListener("DOMContentLoaded", registerFormHandler);

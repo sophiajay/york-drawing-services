@@ -717,13 +717,72 @@ label:has(+ :required):after {
     border-radius: 2px;
     background-color: rgb(149, 60, 60);
     color: white;
+    transition: opacity 0.4s ease-in-out;
 }
 
 .success {
     padding: 0.5em 1em;
-    border-radius: 2px;
-    background-color: rgb(42, 111, 58);
+    border-radius: 10px;
+    transition: opacity 0.4s ease-in-out;
+    opacity: 1;
+}
+
+
+.message-actions {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease-in-out;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    text-align: center;
+}
+
+.message-actions.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.message-actions #contact-form-status {
+    width: 100%;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+#send-another-btn {
+    padding: 0.75em 1.5em;
+    background-color: #333;
     color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    letter-spacing: 2px;
+    cursor: pointer;
+    min-width: 200px;
+    transition: background-color 0.3s ease, opacity 0.4s ease-in-out;
+}
+
+#send-another-btn:hover {
+    background-color: #555;
+}
+
+#send-another-btn:active {
+    background-color: #222;
+}
+
+.form-hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease-in-out;
 }
 
 .flex-grow {
@@ -1226,6 +1285,7 @@ summary::after {
 .contact-form-block {
     flex: 1;
     padding-left: 0;
+    position: relative;
 }
 
 .contact-form-label {
