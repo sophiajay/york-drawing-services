@@ -64,6 +64,8 @@ h1 {
     font-size: 1.8em;
     padding: 0.7em 0;
     letter-spacing: 0.02em;
+    font-weight: 300;
+    font-family: 'Figtree';
 }
 
 /* Grouping content
@@ -477,10 +479,6 @@ a {
     text-decoration: underline;
     color: #303030;
     text-decoration: none;
-}
-
-h1 {
-    font-weight: normal;
 }
 
 h2 {
