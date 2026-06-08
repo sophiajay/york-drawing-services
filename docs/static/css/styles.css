@@ -1232,6 +1232,14 @@ summary::after {
     padding-top: 2em;
 }
 
+/* Anchor */
+/* a.anchor {
+    display: block;
+    position: relative;
+    top: -2em;
+    visibility: hidden;
+} */
+
 /* Contact Section */
 
 .contact-outer {
@@ -1397,10 +1405,16 @@ textarea {
     justify-content: center;
 }
 
-.project-details,
-.blog-details {
+ {
     align-items: start;
     padding: 7em 0 3em 0;
+    width: 75vw;
+    margin: auto;
+}
+
+.blog-details, .project-details {
+    align-items: start;
+    padding: 5em 0 2em 0;
     width: 75vw;
     margin: auto;
 }
@@ -1897,13 +1911,8 @@ nav {
 
     .package-section,
     .overview-content,
-    .projects-section,
     .contact-outer {
         padding: 4em 0;
-    }
-
-    .award {
-        padding: 0 0 4em 0;
     }
 
     .overview-content-left {
@@ -1976,5 +1985,12 @@ nav {
     .blog-title {
         font-size: 1.3em;
     }
+
+    a.anchor {
+    display: block;
+    position: relative;
+    top: -2em;
+    visibility: hidden;
+}
 
 }
