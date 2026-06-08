@@ -937,7 +937,7 @@ label:has(+ :required):after {
 .award {
     display: flex;
     flex-direction: column;
-    padding: 0 0 6em 0;
+    padding: 6em 0;
 }
 
 .award h2 {
@@ -1117,7 +1117,7 @@ summary::after {
 }
 
 .projects-section {
-    padding: 6em 0;
+    padding: 0 0 6em 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1206,10 +1206,13 @@ summary::after {
 
 .testimonial-author,
 .blog-author {
-    font-weight: bold;
-    font-size: 0.95em;
+    font-family: 'Figtree';
     color: #333;
     padding-top: 1em;
+}
+
+.testimonial-author {
+    font-size: medium;
 }
 
 .testimonial-author p {
@@ -1566,17 +1569,22 @@ main-img-tawny {
     width: 75vw;
     margin: auto;
     gap: 2em;
+    padding-bottom: 3em;
 }
 
 .blog-card {
-    /* background: #fff; */
-    border-radius: 0%;
-    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03); */
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 16%);
     font-size: 0.95em;
     width: 32%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 0.5em;
+}
+
+.blog-card p {
+    margin: 0;
 }
 
 .blog-card:hover {
