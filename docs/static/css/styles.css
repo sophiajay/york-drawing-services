@@ -490,6 +490,7 @@ h2 {
 }
 
 h3 {
+    font-family: 'Figtree';
     font-size: 1.1em;
     font-weight: lighter;
     margin-bottom: 0.4em;
@@ -998,6 +999,40 @@ label:has(+ :required):after {
 .overview-image {
     max-height: 80vh;
     object-fit: contain;
+}
+
+/* Prices Section */
+.prices {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 6em 0 0 0;
+}
+
+.prices-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    max-width: 90vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 1em;
+}
+
+.price-card {
+    padding: 1em;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 16%);
+    border-radius: 4px;
+    width: 350px;
+}
+
+.price-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.price-card ul li:before {
+  content: '✓';
 }
 
 /* Services Section */
@@ -1601,7 +1636,8 @@ main-img-tawny {
     margin: 0;
 }
 
-.blog-card:hover {
+.blog-card:hover,
+/* .price-card:hover*/ { 
     transform: scale(1.1);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
 }
@@ -1911,8 +1947,13 @@ nav {
 
     .package-section,
     .overview-content,
-    .contact-outer {
+    .contact-outer,
+    .prices {
         padding: 4em 0;
+    }
+
+    .prices {
+        padding-bottom: 0;
     }
 
     .overview-content-left {
@@ -1992,5 +2033,9 @@ nav {
     top: -2em;
     visibility: hidden;
 }
+
+    .prices-list {
+        flex-direction: column;
+    }
 
 }
