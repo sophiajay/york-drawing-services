@@ -1453,6 +1453,7 @@ main-img-tawny {
 .details-desc {
     margin: 0;
     font-size: 0.9em;
+    padding-bottom: 1.5em;
 }
 
 .details-highlights {
@@ -1934,6 +1935,10 @@ nav {
     .details-title {
         width: 100%;
     }
+
+    .details-desc {
+    padding-bottom: 0em;
+}
 
     .details-content .details-highlights {
         justify-content: left;

@@ -102,42 +102,55 @@
 
 <!-- CONTACT SECTION -->
 <div class="container contact-section" id="contact-us">
-    <div class="contact-inner">
-        <div class="contact-details">
-            <h2>CONTACT US TODAY</h2>
-            <p><strong>Tel:</strong> 07353 765766<br />
-                <strong>Email:</strong> hello@yorkdrawingservices.com<br />
-                <strong>Social:</strong> @yorkdrawingservices
-            </p>
-            <a class="button contact-btn" href="tel:07353765766">CALL US</a>
-            <a class="button contact-btn" href="mailto:hello@yorkdrawingservices.com">EMAIL US</a>
-        </div>
-        <div class="contact-form-block">
-            <span class="contact-form-label"></span>
-            <form id="contact-form" action="https://formspree.io/f/xnnpbzdl" method="POST">
-                <fieldset>
-                    <p id="contact-form-status"></p>
-                    <div class="field">
-                        <label for="name">Name</label>
-                        <input class="input w-full" required name="name" />
-                    </div>
-                    <div class="field">
-                        <label for="telephone">Phone number</label>
-                        <input class="input w-full" required type="tel" name="telephone" />
-                    </div>
-                    <div class="field">
-                        <label for="email">Email</label>
-                        <input class="input w-full" required type="email" name="email" />
-                    </div>
-                    <div class="field">
-                        <label for="message">Project address and description</label>
-                        <textarea rows="4" style="height:125px" class="input w-full" required name="message"></textarea>
-                    </div>
-                    <div class="field">
-                        <button id="submit-button" class="button" type="submit">Send</button>
-                    </div>
-                </fieldset>
-            </form>
+    <div class="contact-outer">
+        <h2 class="section-title">Get a Fixed-Fee Quote Within 24 Hours</h2>
+        <p>Tell us your project details and we'll provide expert advice on planning requirements, drawing packages and costs. 
+            No obligation.</p>
+        <div class="contact-inner">
+            <div class="contact-details">
+                <p><strong>Tel:</strong> 07353 765766<br />
+                    <strong>Email:</strong> hello@yorkdrawingservices.com<br />
+                    <strong>Social:</strong> @yorkdrawingservices
+                </p>
+                <a class="button contact-btn" href="tel:07353765766">Call us Now</a>
+                <a class="button contact-btn" href="mailto:hello@yorkdrawingservices.com">Send an Email</a>
+            </div>
+            <div class="contact-form-block">
+                <span class="contact-form-label"></span>
+                <form id="contact-form" action="https://formspree.io/f/xnnpbzdl" method="POST">
+                    <fieldset>
+                        <p id="contact-form-status"></p>
+                        <div class="field">
+                            <label for="name">Full Name</label>
+                            <input class="input w-full" required name="name" />
+                        </div>
+                        <div class="field">
+                            <label for="telephone">Telephone number</label>
+                            <input class="input w-full" type="tel" name="telephone" />
+                        </div>
+                        <div class="field">
+                            <label for="email">Email Address</label>
+                            <input class="input w-full" required type="email" name="email" />
+                        </div>
+                        <div class="field">
+                            <label for="address">Project Address</label>
+                            <input class="input w-full" required type="text" name="address" />
+                        </div>
+                        <div class="field">
+                            <label for="details">Tell Us About Your Project</label>
+                            <textarea rows="4" style="height:125px" class="input w-full" required
+                                name="message"></textarea>
+                        </div>
+                        <div class="field">
+                            <button id="submit-button" class="button" type="submit">Get My Quote</button>
+                        </div>
+                    </fieldset>
+                </form>
+                <div class="message-actions success" role="alert">
+                    <p id="contact-form-message"></p>
+                    <button id="send-another-btn">SEND ANOTHER</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
