@@ -938,7 +938,7 @@ label:has(+ :required):after {
 .award {
     display: flex;
     flex-direction: column;
-    padding: 6em 0;
+    padding: 6em 0 0em 0;
 }
 
 .award h2 {
@@ -1152,7 +1152,7 @@ summary::after {
 }
 
 .projects-section {
-    padding: 0 0 6em 0;
+    padding: 6em 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1639,8 +1639,7 @@ main-img-tawny {
 }
 
 .blog-card:hover,
-.price-card:hover
-    {
+.price-card:hover {
     transform: scale(1.05);
 }
 
@@ -2029,6 +2028,10 @@ ol li {
         max-width: unset;
     }
 
+    .award {
+        padding: 4em 0 0 0;
+    }
+
     .award-img {
         right: -3.5rem;
     }
@@ -2059,7 +2062,8 @@ ol li {
     .package-section,
     .overview-content,
     .contact-outer,
-    .prices {
+    .prices,
+    .projects-section {
         padding: 4em 0;
     }
 
