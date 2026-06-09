@@ -440,10 +440,10 @@ textarea,
 }
 
 .figtree-300 {
-  font-family: "Figtree", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 
 
@@ -1003,7 +1003,7 @@ label:has(+ :required):after {
 
 /* Prices Section */
 .prices {
-    display:flex;
+    display: flex;
     align-items: center;
     flex-direction: column;
     padding: 6em 0 0 0;
@@ -1027,12 +1027,12 @@ label:has(+ :required):after {
 }
 
 .price-card ul {
-  list-style: none;
-  padding-left: 0;
+    list-style: none;
+    padding-left: 0;
 }
 
 .price-card ul li:before {
-  content: '✓';
+    content: '✓';
 }
 
 /* Services Section */
@@ -1073,8 +1073,8 @@ summary::marker {
 }
 
 details summary::-webkit-details-marker {
-        display: none;
-      }
+    display: none;
+}
 
 summary::before,
 summary::after {
@@ -1390,6 +1390,7 @@ textarea {
     width: 100%;
     box-shadow: rgb(199 199 199 / 60%) 0px 0px 3px;
     z-index: 1;
+    overflow: visible;
 }
 
 .header-titles {
@@ -1440,14 +1441,15 @@ textarea {
     justify-content: center;
 }
 
- {
+    {
     align-items: start;
     padding: 7em 0 3em 0;
     width: 75vw;
     margin: auto;
 }
 
-.blog-details, .project-details {
+.blog-details,
+.project-details {
     align-items: start;
     padding: 5em 0 2em 0;
     width: 75vw;
@@ -1637,9 +1639,9 @@ main-img-tawny {
 }
 
 .blog-card:hover,
-/* .price-card:hover*/ { 
-    transform: scale(1.1);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+.price-card:hover
+    {
+    transform: scale(1.05);
 }
 
 .blog-card-details {
@@ -1666,11 +1668,12 @@ main-img-tawny {
     margin: auto;
 }
 
-.blog-main p, .blog-main li {
+.blog-main p,
+.blog-main li {
     font-family: "Figtree";
     font-weight: 300;
     font-size: medium;
-}   
+}
 
 .blog-title {
     text-align: center;
@@ -1770,7 +1773,7 @@ main-img-tawny {
 
 
 nav {
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
@@ -1807,6 +1810,106 @@ nav {
     display: none;
 }
 
+/* Dropdown Button */
+.dropbtn {
+    background: transparent;
+    color: inherit;
+    padding: 0.5em;
+    font: inherit;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    font-family: 'Figtree';
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    /* keep rendered but hidden for smooth reveal */
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.12);
+    z-index: 99999;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #fafafa;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+    color: rgb(59, 59, 59);
+}
+
+.mobile {
+    display: none;
+}
+
+
+/* Services Pages */
+.services-page {
+    display: flex;
+    flex-direction: column;
+
+    width: 80vw;
+    margin: auto;
+}
+
+.services-title {
+    padding: 3em 0 2em 0;
+}
+
+.services-page img {
+    /* width: 85vw; */
+    height: 40vw;
+    object-fit: cover;
+    padding-bottom: 2em;
+    /* align-items: center; */
+    /* margin: auto; */
+    width: 100%;
+}
+
+.services-page h3 {
+    padding: 1.5em 0 1em 0;
+}
+
+.services-page ul li,
+ol li {
+    padding-bottom: 0;
+}
+
+
 
 /* Responsive */
 @media (max-width: 900px) {
@@ -1828,6 +1931,14 @@ nav {
         flex-direction: column;
         justify-content: center;
         flex-grow: 0;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .dropdown {
+        display: none;
     }
 
     main {
@@ -1996,8 +2107,8 @@ nav {
     }
 
     .details-desc {
-    padding-bottom: 0em;
-}
+        padding-bottom: 0em;
+    }
 
     .details-content .details-highlights {
         justify-content: left;
@@ -2028,14 +2139,24 @@ nav {
     }
 
     a.anchor {
-    display: block;
-    position: relative;
-    top: -2em;
-    visibility: hidden;
-}
+        display: block;
+        position: relative;
+        top: -2em;
+        visibility: hidden;
+    }
 
     .prices-list {
         flex-direction: column;
+    }
+
+    .services-title {
+        padding: 1.5em 0 1.2em 0;
+    }
+
+    .services-page img {
+        width: 80vw;
+        height: auto;
+        max-height: 60vw;
     }
 
 }
