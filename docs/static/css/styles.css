@@ -1158,6 +1158,10 @@ summary::after {
     align-items: center;
 }
 
+.projects-section .button {
+    margin-top: 3em;
+}
+
 .projects-list {
     display: flex;
     gap: 1em;
@@ -1494,6 +1498,10 @@ main-img-tawny {
     margin: 0 0 0.5em 0;
 }
 
+.project-para {
+    width: 85vw;
+}
+
 .project-para h2 {
     font-size: 1.1em;
     padding: 1.5em;
@@ -1536,12 +1544,33 @@ main-img-tawny {
 .collage-column {
     flex: 33.3%;
     padding: 0 4px;
+    justify-content: space-between;
+    gap: 0.5em;
+    display: flex;
+    flex-direction: column;
 }
 
 .collage-column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+}
+
+/* Make columns equal height and have images fill their anchor */
+.project-collage {
+    align-items: stretch;
+}
+
+.collage-column a {
+    display: block;
+    flex: 1 1 auto;
+}
+
+.collage-column a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .project-plans {
@@ -2161,6 +2190,11 @@ ol li {
         width: 80vw;
         height: auto;
         max-height: 60vw;
+    }
+
+    .collage-column {
+
+        gap: 0;
     }
 
 }
