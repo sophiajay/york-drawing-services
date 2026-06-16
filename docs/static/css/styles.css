@@ -1646,9 +1646,9 @@ main-img-tawny {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    width: 75vw;
+    width: 85vw;
     margin: auto;
-    gap: 2em;
+    gap: 0.5em;
     padding-bottom: 3em;
 }
 
