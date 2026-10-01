@@ -446,6 +446,13 @@ textarea,
     font-style: normal;
 }
 
+.cormorant-garamond-300 {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
 
 th,
 td {
@@ -1419,6 +1426,9 @@ textarea {
 .header-titles a {
     color: #000000;
     letter-spacing: 1.5;
+    font-family: 'Cormorant Garamond';
+    font-weight: 400;
+    margin-left: 0.5em;
 }
 
 .title-and-links .header-link {
