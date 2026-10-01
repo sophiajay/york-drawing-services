@@ -447,10 +447,10 @@ textarea,
 }
 
 .cormorant-garamond-300 {
-  font-family: "Cormorant Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 
 
@@ -1063,6 +1063,19 @@ label:has(+ :required):after {
 .services-content ul {
     padding: 0.5em 0 0 1.5em;
     width: 100%;
+}
+
+.services-page p+ul {
+    margin-top: 0em;
+}
+
+.services-page a:not(.button) {
+    text-decoration: underline;
+    color: #6c8bc4;
+}
+
+.services-page .full-height {
+    height: 100%;
 }
 
 .services-content ul li {
@@ -2125,8 +2138,8 @@ ol li {
     }
 
     .price-card:hover {
-    transform: none;
-}
+        transform: none;
+    }
 
     .overview-content-left {
         padding-top: 1em;
