@@ -1948,12 +1948,17 @@ nav {
 }
 
 .services-page h3 {
-    padding: 1.5em 0 1em 0;
+    padding: 1.5em 0 0.5em 0;
+    font-weight: bolder;
 }
 
 .services-page ul li,
 ol li {
-    padding-bottom: 0;
+    padding-bottom: 0.3em;
+}
+
+.services-page p {
+    margin: 0 0 0.5em 0;
 }
 
 
