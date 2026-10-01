@@ -928,6 +928,12 @@ label:has(+ :required):after {
     margin-top: 0em;
 }
 
+.button.info-btn {
+    min-width: min-content;
+    margin: auto;
+    display: none;
+}
+
 .drawing-preview {
     flex: 1;
     text-align: center;
@@ -2102,6 +2108,10 @@ ol li {
         padding-bottom: 0;
     }
 
+    .price-card:hover {
+    transform: none;
+}
+
     .overview-content-left {
         padding-top: 1em;
     }
@@ -2125,6 +2135,10 @@ ol li {
     }
 
     .button {
+        display: block;
+    }
+
+    .button.info-btn {
         display: block;
     }
 
