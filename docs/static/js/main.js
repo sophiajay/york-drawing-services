@@ -27,9 +27,7 @@
                     
                     // Trigger animations
                     form.classList.add("form-hidden");
-                    setTimeout(() => {
-                        messageActions.classList.add("visible");
-                    }, 400);
+                    messageActions.classList.add("visible");
                 } else {
                     // Error: show error in form status
                     formStatus.classList.add("error");
@@ -52,14 +50,12 @@
         function handleSendAnother() {
             // Hide message and show form again
             messageActions.classList.remove("visible");
-            setTimeout(() => {
-                form.classList.remove("form-hidden");
-                messageDisplay.classList.remove("error");
-                messageDisplay.innerHTML = "";
-                formStatus.classList.remove("error");
-                formStatus.innerHTML = "";
-                form.reset();
-            }, 400);
+            form.classList.remove("form-hidden");
+            messageDisplay.classList.remove("error");
+            messageDisplay.innerHTML = "";
+            formStatus.classList.remove("error");
+            formStatus.innerHTML = "";
+            form.reset();
         }
 
         form.addEventListener("submit", handleSubmit);

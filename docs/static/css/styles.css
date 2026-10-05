@@ -742,15 +742,10 @@ label:has(+ :required):after {
 
 
 .message-actions {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
+    visibility: hidden;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out, visibility 0s linear 0.4s;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -759,8 +754,10 @@ label:has(+ :required):after {
 }
 
 .message-actions.visible {
+    visibility: visible;
     opacity: 1;
     pointer-events: auto;
+    transition: opacity 0.4s ease-in-out;
 }
 
 .message-actions #contact-form-status {
@@ -790,8 +787,12 @@ label:has(+ :required):after {
 
 .form-hidden {
     opacity: 0;
+    max-height: 0 !important;
+    min-height: 0;
+    margin: 0;
+    overflow: hidden;
     pointer-events: none;
-    transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out, max-height 0.4s ease-in-out, margin 0.4s ease-in-out;
 }
 
 .flex-grow {
@@ -1348,6 +1349,8 @@ summary::after {
 } */
 
 .contact-form-block {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
     border-radius: 8px;
     font-family: 'Figtree';
     font-size: medium;
@@ -1356,7 +1359,7 @@ summary::after {
 }
 
 .contact-form-label {
-    display: block;
+    display: none;
     font-size: 0.95em;
     color: #333;
     text-align: left;
@@ -1366,7 +1369,18 @@ summary::after {
 .contact-form-block form {
     /* background: #F7F5F0; */
     /* padding: 0 1.5em; */
+    grid-column: 1;
+    grid-row: 1;
+    max-height: 1200px;
+    min-height: 0;
+    overflow: hidden;
     border-radius: 8px;
+    transition: opacity 0.4s ease-in-out, max-height 0.4s ease-in-out;
+}
+
+.contact-form-block .message-actions {
+    grid-column: 1;
+    grid-row: 1;
 }
 
 .field {
